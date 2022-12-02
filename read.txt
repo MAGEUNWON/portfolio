@@ -1,0 +1,2 @@
+package.json install 하기 
+tsconfig.json 나중에 리액트 할거면 다시 webpack이랑 같이 설정 맞게 바꾸기
