@@ -3,13 +3,43 @@ exports.__esModule = true;
 var fs = require("fs");
 var http = require("http");
 var server = http.createServer(function (req, res) {
-    // const main = fs.readFileSync('./index.html')
-    var main = fs.readFile('./index.html', 'utf-8', function (err, data) {
-        if (err)
-            throw err;
-    });
-    res.writeHead(200, { 'content-Type': 'text/html; charset=utf8' });
-    res.end(main);
+    var main = fs.readFileSync('./public/index.html');
+    var indexCss = fs.readFileSync('./css/index.css');
+    var PlanetImg = fs.readFileSync('./img/geunwonPlanet.png');
+    var universeImg = fs.readFileSync('./img/universeBg.png');
+    var indexJs = fs.readFileSync('./index.js');
+    if (req.method === "GET") {
+        if (req.url === "/") {
+            console.log("get");
+            res.writeHead(200, { 'content-Type': 'text/html; charset=utf8' });
+            res.write(main);
+            res.end();
+        }
+        else if (req.url === "/css/index.css") {
+            console.log("css");
+            res.writeHead(200, { "Content-Type": "text/css" });
+            res.write(indexCss);
+            res.end();
+        }
+        else if (req.url === "/img/geunwonPlanet.png") {
+            console.log("png");
+            res.writeHead(200, { "Content-Type": "image/png" });
+            res.write(PlanetImg);
+            res.end();
+        }
+        else if (req.url === "/img/universeBg.png") {
+            console.log("png");
+            res.writeHead(200, { "Content-Type": "image/png" });
+            res.write(universeImg);
+            res.end();
+        }
+        else if (req.url === "/index.js") {
+            console.log("js");
+            res.writeHead(200, { "Content-Type": "text/javascript" });
+            res.write(indexJs);
+            res.end();
+        }
+    }
 });
 server.listen(3050, function (err) {
     if (err)
