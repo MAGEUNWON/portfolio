@@ -10,7 +10,7 @@ var server = http.createServer(function (req, res) {
     var indexJs = fs.readFileSync('./index.js');
     if (req.method === "GET") {
         if (req.url === "/") {
-            console.log("get");
+            console.log("html");
             res.writeHead(200, { 'content-Type': 'text/html; charset=utf8' });
             res.write(main);
             res.end();
