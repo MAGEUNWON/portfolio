@@ -7,20 +7,12 @@
 #root {
   width: 100vw;
   height: 100vh;
-  background-image: url("./img/universeBg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
   position: relative;
 }
 #root > div {
-  width: 310px;
-  height: 200px;
-  background-image: url("./img/geunwonPlanet.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   position: absolute;
   top: 240px;
   right: 250px;
