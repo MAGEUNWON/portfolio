@@ -10,7 +10,7 @@ var server = http.createServer(function (req, res) {
     var indexJs = fs.readFileSync("./index.js");
     if (req.method === "GET") {
         if (req.url === "/") {
-            console.log("get");
+            console.log("html");
             res.writeHead(200, { "content-Type": "text/html; charset=utf8" });
             res.write(main);
             res.end();
@@ -26,7 +26,6 @@ var server = http.createServer(function (req, res) {
             res.writeHead(200, { "Content-Type": "image/png" });
             // res.write(PlanetImg);
             res.end(PlanetImg);
-            console.log(PlanetImg);
         }
         else if (req.url === "/img/universeBg.png") {
             console.log("png");
