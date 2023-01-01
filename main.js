@@ -1,3 +1,3 @@
-window.addEventListener("DOMContentLoaded", (e) => {
-  new App("#root");
-});
+// window.addEventListener("DOMContentLoaded", (e) => {
+//   new App("#root");
+// });
