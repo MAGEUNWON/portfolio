@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#nav {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+}
+
+nav.navs {
+  -webkit-animation: rotate_image 10s linear infinite;
+          animation: rotate_image 10s linear infinite;
+  transform: rotateY(50deg);
+}
+
+@-webkit-keyframes rotate_image {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotate_image {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  perspective: 700px;
+  z-index: -5;
+  position: relative;
+}
+#root > img {
+  width: 100vw;
+  height: 100vh;
+}/*# sourceMappingURL=index.css.map */

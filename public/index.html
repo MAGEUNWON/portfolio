@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/index.css" />
-    <!-- <script type="module" src="./index.js" defer></script> -->
-    <script type="module" src="./index.js" defer></script>
+    <link rel="stylesheet" href="./static/css/index.css" />
+    <!-- <script type="module" src="./static/ts/index.js" defer></script> -->
   </head>
   <body>
-    <!-- <div id="root" src="http://localhost:3050/img/universeBg.png">
-      <div></div>
-    </div> -->
-    <nav>
-      <a href="/planet" data-link>근원이 행성</a>
+    <nav id="nav" class="navs">
+      <a href="/Planet" data-link
+        ><img id="img" src="./static/img/geunwonPlanet.png" alt="행성 이미지"
+      /></a>
     </nav>
-    <div id="root"></div>
+
+    <div id="root">
+      <img src="./static/img/universeBg.png" alt="배경 이미지" />
+    </div>
   </body>
 </html>
