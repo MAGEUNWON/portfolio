@@ -60,6 +60,7 @@ var server = http.createServer(function (req, res) {
     var PlanetBg = fs.readFileSync("static/img/PlanetBg.png");
     var HillBg = fs.readFileSync("static/img/HillBg.jpg");
     var indexJs = fs.readFileSync("compileJs/index.js");
+    var PlanetJs = fs.readFileSync("compileJs/components/Planet.js");
     if (req.method === "GET") {
         if (req.url === "/") {
             console.log("html");
@@ -85,7 +86,7 @@ var server = http.createServer(function (req, res) {
             // res.write(universeImg);
             res.end(universeImg);
         }
-        else if (req.url === "/static/ts/index.js") {
+        else if (req.url === "/compileJs/index.js") {
             console.log("js");
             res.writeHead(200, { "Content-Type": "text/javascript" });
             res.write(indexJs);
@@ -108,6 +109,10 @@ var server = http.createServer(function (req, res) {
         else if (req.url === "/static/img/HillBg.jpg") {
             res.writeHead(200, { "Content-Type": "image/jpg" });
             res.end(HillBg);
+        }
+        else if (req.url === "/compileJs/components/Planet.js") {
+            res.writeHead(200, { "Content-Type": "text/javascript" });
+            res.end(PlanetJs);
         }
     }
 });
