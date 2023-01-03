@@ -1,18 +1,20 @@
 import * as fs from "fs";
 import * as http from "http";
-import { Planet } from "./static/ts/components/components";
+// const fs = require("fs");
+// const http = require("http");
+// import { Planet } from "./static/ts/components/components";
 
 const server = http.createServer(
   (req: http.IncomingMessage, res: http.ServerResponse) => {
-    const main = fs.readFileSync("./public/index.html");
+    const main = fs.readFileSync("public/index.html");
 
-    const indexCss = fs.readFileSync("./static/css/index.css");
+    const indexCss = fs.readFileSync("static/css/index.css");
 
-    const PlanetImg = fs.readFileSync("./static/img/geunwonPlanet.png");
+    const PlanetImg = fs.readFileSync("static/img/geunwonPlanet.png");
 
-    const universeImg = fs.readFileSync("./static/img/universeBg.png");
+    const universeImg = fs.readFileSync("static/img/universeBg.png");
 
-    const indexJs = fs.readFileSync("./static/ts/index.js");
+    const indexJs = fs.readFileSync("compileJs/index.js");
 
     if (req.method === "GET") {
       if (req.url === "/") {
