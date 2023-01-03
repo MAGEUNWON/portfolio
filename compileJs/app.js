@@ -1,7 +1,5 @@
-"use strict";
-exports.__esModule = true;
-var fs = require("fs");
-var http = require("http");
+import * as fs from "fs";
+import * as http from "http";
 var server = http.createServer(function (req, res) {
     var main = fs.readFileSync("./public/index.html");
     var indexCss = fs.readFileSync("./static/css/index.css");

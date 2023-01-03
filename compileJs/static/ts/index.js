@@ -1,4 +1,3 @@
-"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -35,40 +34,74 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-exports.__esModule = true;
-exports.NotFound = exports.Planet = void 0;
-var createElement = function (domString) {
-    var tmep = document.createElement("template");
-    tmep.innerHTML = domString;
-    return tmep.content;
-};
-var fetchData = function (url) { return __awaiter(void 0, void 0, void 0, function () {
-    var res, json;
-    return __generator(this, function (_a) {
-        switch (_a.label) {
-            case 0: return [4 /*yield*/, fetch(url)];
+import { Planet, NotFound } from "./components/components.js";
+// import { NotFound } from "./components/NotFound";
+// import Planet from "./components/Planet.js";
+var root = document.getElementById("root");
+var nav = document.getElementById("nav");
+var routes = [
+    // { path: "", component: Home },
+    { path: "Planet", component: Planet },
+];
+// const render = async (path) => {
+//   try {
+//     const component =
+//       routes.find((route) => route.path === path)?.component || NotFound;
+//     root?.replaceChildren(await component());
+//   } catch (err) {
+//     console.error(err);
+//   }
+// };
+var render = function () { return __awaiter(void 0, void 0, void 0, function () {
+    var hash_1, component, _a, _b, _c, err_1;
+    var _d;
+    return __generator(this, function (_e) {
+        switch (_e.label) {
+            case 0:
+                _e.trys.push([0, 4, , 5]);
+                hash_1 = window.location.hash.replace("#", "");
+                component = ((_d = routes.find(function (route) { return route.path === hash_1; })) === null || _d === void 0 ? void 0 : _d.component) || NotFound;
+                if (!(root === null || root === void 0)) return [3 /*break*/, 1];
+                _a = void 0;
+                return [3 /*break*/, 3];
             case 1:
-                res = _a.sent();
-                return [4 /*yield*/, res.json()];
+                _c = (_b = root).replaceChildren;
+                return [4 /*yield*/, component()];
             case 2:
-                json = _a.sent();
-                return [2 /*return*/, json];
+                _a = _c.apply(_b, [_e.sent()]);
+                _e.label = 3;
+            case 3:
+                _a;
+                return [3 /*break*/, 5];
+            case 4:
+                err_1 = _e.sent();
+                console.error(err_1);
+                return [3 /*break*/, 5];
+            case 5: return [2 /*return*/];
         }
     });
 }); };
-var Planet = function () { return __awaiter(void 0, void 0, void 0, function () {
-    var content;
-    return __generator(this, function (_a) {
-        switch (_a.label) {
-            case 0: return [4 /*yield*/, fetchData("/Planet")];
-            case 1:
-                content = (_a.sent()).content;
-                return [2 /*return*/, createElement("<h1>".concat(content, "}</h1>"))];
-        }
-    });
-}); };
-exports.Planet = Planet;
-var NotFound = function () {
-    createElement("<h1>404 NotFound</h1>");
-};
-exports.NotFound = NotFound;
+window.addEventListener("hashchange", render);
+window.addEventListener("DOMContentLoaded", render);
+// const planet = root?.querySelector("div");
+// // console.log(planet)
+// const navigateTo = (url) => {
+//   history.pushState(null, null, rul);
+//   router();
+// };
+// //페이지 전환 함수
+// const router = async () => {
+//   const routes = [
+//     { path: "/", view: Main },
+//     { path: "404", view: NotFound },
+//   ];
+// };
+// document.addEventListener("DOMContentLoaded", () => {
+//   document.body.addEventListener("click", (e) => {
+//     if (e.target.matches("[data-link")) {
+//       e.preventDefault();
+//       navigateTo(e.target.href);
+//     }
+//   });
+//   router();
+// });
