@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+#root > div:nth-child(1) {
+  width: 100vw;
+  height: 100vh;
+  background: url("/static/img/PlanetBg.png") no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  position: absolute;
+  z-index: 100;
+}
+#root > div:nth-child(2) {
+  width: 100vw;
+  height: 100vh;
+  background: url("/static/img/HillBg.jpg") no-repeat center;
+  background-size: cover;
+}/*# sourceMappingURL=Planet.css.map */
