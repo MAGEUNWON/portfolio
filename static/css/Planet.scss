@@ -28,62 +28,88 @@
     position: absolute;
     z-index: 100;
   }
-  & > #slider{
+  & > div:nth-child(2) {
     @include size(100vw, 100vh);
     background: url("/static/img/HillBg.jpg") no-repeat center;
     background-size: cover;
-    position: relative;
-    overflow: hidden;
-    margin: 20px auto 0 auto;
-    border-radius: 4px;
 
-    &>ul{
+    & > #slider {
+      @include size(100vw, 100vh);
+      // @include felx-setting(center, center);
+      display: flex;
       position: relative;
-      margin: 0;
-      padding: 0;
-      height: 200px;
-      list-style: none;
-      &>li{
-        position: relative;
+      overflow: hidden;
+      margin: 20px auto 0 auto;
+      border-radius: 4px;
+
+      & > button {
+        position: absolute;
+        top: 40%;
+
+        z-index: 999;
         display: block;
+        padding: 4% 3%;
+        @include size(auto, auto);
+        background-color: goldenrod;
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      & > button:nth-child(1) {
+        right: 1%;
+      }
+      & > button:nth-child(2) {
+        left: 0.1%;
+      }
+
+      & > ul {
+        // @include size(auto, 90vh);
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        display: flex;
         margin: 0;
         padding: 0;
-        @include size(500px,300px );
-        text-align: center;
-        line-height: 300px;
+        list-style: none;
+
+        & > li {
+          position: relative;
+          display: block;
+          margin: 0;
+          padding: 0;
+          @include size(1920px, 1920px);
+          text-align: center;
+          line-height: 300px;
+        }
+        & > li:nth-child(1) {
+          background-color: red;
+        }
+        & > li:nth-child(2) {
+          background-color: orange;
+        }
+        & > li:nth-child(3) {
+          background-color: blue;
+        }
       }
-      
     }
-
-    &>a{
-      position: absolute;
-      top:40%;
-      z-index: 999;
-      display: block;
-      padding: 4% 3%;
-      @include size(auto,auto);
-      background-color: goldenrod;
-      color: black;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 18px;
-      opacity: 0.8;
-      cursor: pointer;
-
-    }
-
   }
 }
-a.control_prev:hover, a.control_next:hover{
+
+a.control_prev:hover,
+a.control_next:hover {
   opacity: 1;
   transition: all 0.2s ease;
 }
 
-a.control_prev{
+a.control_prev {
   border-radius: 0 2px 2px 0;
 }
 
-a.control_next{
+a.control_next {
   right: 0;
-  border-radius: 2px  0 2px;
+  border-radius: 2px 0 2px;
 }

@@ -17,34 +17,22 @@
   position: absolute;
   z-index: 100;
 }
-#root > #slider {
+#root > div:nth-child(2) {
   width: 100vw;
   height: 100vh;
   background: url("/static/img/HillBg.jpg") no-repeat center;
   background-size: cover;
+}
+#root > div:nth-child(2) > #slider {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
   position: relative;
   overflow: hidden;
   margin: 20px auto 0 auto;
   border-radius: 4px;
 }
-#root > #slider > ul {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 200px;
-  list-style: none;
-}
-#root > #slider > ul > li {
-  position: relative;
-  display: block;
-  margin: 0;
-  padding: 0;
-  width: 500px;
-  height: 300px;
-  text-align: center;
-  line-height: 300px;
-}
-#root > #slider > a {
+#root > div:nth-child(2) > #slider > button {
   position: absolute;
   top: 40%;
   z-index: 999;
@@ -60,8 +48,43 @@
   opacity: 0.8;
   cursor: pointer;
 }
+#root > div:nth-child(2) > #slider > button:nth-child(1) {
+  right: 1%;
+}
+#root > div:nth-child(2) > #slider > button:nth-child(2) {
+  left: 0.1%;
+}
+#root > div:nth-child(2) > #slider > ul {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#root > div:nth-child(2) > #slider > ul > li {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 1920px;
+  height: 1920px;
+  text-align: center;
+  line-height: 300px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) {
+  background-color: red;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) {
+  background-color: orange;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(3) {
+  background-color: blue;
+}
 
-a.control_prev:hover, a.control_next:hover {
+a.control_prev:hover,
+a.control_next:hover {
   opacity: 1;
   transition: all 0.2s ease;
 }

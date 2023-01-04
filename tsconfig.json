@@ -8,6 +8,7 @@
     "skipLibCheck": true,
     "allowJs": true,
     "moduleResolution": "node",
+    "sourceMap": true,
     "outDir": "./compileJs",
     "baseUrl": ".",
     "paths": {

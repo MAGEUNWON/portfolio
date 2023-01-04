@@ -67,3 +67,4 @@ export var Planet = function () { return __awaiter(void 0, void 0, void 0, funct
 export var NotFound = function () {
     createElement("<h1>404 NotFound</h1>");
 };
+//# sourceMappingURL=components.js.map

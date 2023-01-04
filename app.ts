@@ -51,6 +51,7 @@ import * as http from "http";
 //   console.log(`'http://localhost:3050' 에서 서버가 실행되고 있습니다!`);
 // });
 
+//함수 만들기, 객체화 시키기(코딩 테스트 했던파일에 해본 것 있음)
 const server = http.createServer(
   (req: http.IncomingMessage, res: http.ServerResponse) => {
     const main = fs.readFileSync("public/index.html");
@@ -71,7 +72,7 @@ const server = http.createServer(
 
     const indexJs = fs.readFileSync("compileJs/index.js");
 
-    const PlanetJs = fs.readFileSync("compileJs/components/Planet.js")
+    const PlanetJs = fs.readFileSync("compileJs/components/Planet.js");
 
     if (req.method === "GET") {
       if (req.url === "/") {
@@ -113,9 +114,9 @@ const server = http.createServer(
       } else if (req.url === "/static/img/HillBg.jpg") {
         res.writeHead(200, { "Content-Type": "image/jpg" });
         res.end(HillBg);
-      }else if(req.url ==="/compileJs/components/Planet.js"){
-        res.writeHead(200, {"Content-Type" :"text/javascript"});
-        res.end(PlanetJs)
+      } else if (req.url === "/compileJs/components/Planet.js") {
+        res.writeHead(200, { "Content-Type": "text/javascript" });
+        res.end(PlanetJs);
       }
     }
   }
