@@ -82,6 +82,9 @@
 #root > div:nth-child(2) > #slider > ul > li:nth-child(3) {
   background-color: blue;
 }
+#root > div:nth-child(2) > #slider > ul > li:nth-child(4) {
+  background-color: black;
+}
 
 a.control_prev:hover,
 a.control_next:hover {
