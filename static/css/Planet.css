@@ -74,7 +74,25 @@
   line-height: 300px;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(1) {
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div:nth-child(1) {
+  width: 350px;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 20%;
+  margin-right: 3rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div:nth-child(2) {
+  width: 1000px;
+  height: 600px;
+  border: 2px solid black;
+  border-radius: 15%;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(2) {
   background-color: orange;
