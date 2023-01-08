@@ -101,6 +101,12 @@
             margin-left: 3rem;
             margin-bottom: 3rem;
 
+              &>div{
+                @include size(30px,30px);
+                background: url("/static/img/github.png") no-repeat center;
+                background-size: cover;
+              }
+
           }
         }
         & > li:nth-child(2) {

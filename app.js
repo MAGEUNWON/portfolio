@@ -50,6 +50,7 @@ var http = require("http");
 //   if (err) throw err;
 //   console.log(`'http://localhost:3050' 에서 서버가 실행되고 있습니다!`);
 // });
+//함수 만들기, 객체화 시키기(코딩 테스트 했던파일에 해본 것 있음)
 var server = http.createServer(function (req, res) {
     var main = fs.readFileSync("public/index.html");
     var Planet = fs.readFileSync("static/html/Planet.html");
@@ -59,6 +60,7 @@ var server = http.createServer(function (req, res) {
     var universeImg = fs.readFileSync("static/img/universeBg.png");
     var PlanetBg = fs.readFileSync("static/img/PlanetBg.png");
     var HillBg = fs.readFileSync("static/img/HillBg.jpg");
+    var github = fs.readFileSync("static/img/github.png");
     var indexJs = fs.readFileSync("compileJs/index.js");
     var PlanetJs = fs.readFileSync("compileJs/components/Planet.js");
     if (req.method === "GET") {
@@ -109,6 +111,10 @@ var server = http.createServer(function (req, res) {
         else if (req.url === "/static/img/HillBg.jpg") {
             res.writeHead(200, { "Content-Type": "image/jpg" });
             res.end(HillBg);
+        }
+        else if (req.url === "/static/img/github.png") {
+            res.writeHead(200, { "Content-Type": "image/png" });
+            res.end(github);
         }
         else if (req.url === "/compileJs/components/Planet.js") {
             res.writeHead(200, { "Content-Type": "text/javascript" });

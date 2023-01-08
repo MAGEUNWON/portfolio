@@ -70,6 +70,8 @@ const server = http.createServer(
 
     const HillBg = fs.readFileSync("static/img/HillBg.jpg");
 
+    const github = fs.readFileSync("static/img/github.png");
+
     const indexJs = fs.readFileSync("compileJs/index.js");
 
     const PlanetJs = fs.readFileSync("compileJs/components/Planet.js");
@@ -114,13 +116,18 @@ const server = http.createServer(
       } else if (req.url === "/static/img/HillBg.jpg") {
         res.writeHead(200, { "Content-Type": "image/jpg" });
         res.end(HillBg);
-      } else if (req.url === "/compileJs/components/Planet.js") {
+      } else if(req.url === "/static/img/github.png"){
+        res.writeHead(200, { "Content-Type": "image/png" });
+        res.end(github);
+      }else if (req.url === "/compileJs/components/Planet.js") {
         res.writeHead(200, { "Content-Type": "text/javascript" });
         res.end(PlanetJs);
-      }
+      } 
     }
   }
 );
+
+
 
 server.listen(3050, (err?: ErrorCallback) => {
   if (err) throw err;
