@@ -83,7 +83,7 @@
           padding: 0;
           @include size(1920px, 1920px);
           text-align: center;
-          line-height: 300px;
+          // line-height: 300px;
         }
         & > li:nth-child(1) {
           @include felx-setting(center,center);
@@ -95,17 +95,16 @@
             margin-right: 3rem;
           }
           & > div:nth-child(2){
+            @include felx-setting(center,center, column);
             @include size(1000px, 600px);
             border: 2px solid black;
             border-radius: 15%;
             margin-left: 3rem;
             margin-bottom: 3rem;
 
-              &>div{
-                @include size(30px,30px);
-                background: url("/static/img/github.png") no-repeat center;
-                background-size: cover;
-              }
+            &> p{
+              @include size(600px, 50px);
+            }
 
           }
         }

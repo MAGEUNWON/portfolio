@@ -1,5 +1,6 @@
 import * as fs from "fs";
 import * as http from "http";
+import { runInNewContext } from "vm";
 // import fs_promise from "fs/promises";
 // const fs = require('fs').promises
 // const fs = require("fs");
@@ -122,7 +123,7 @@ const server = http.createServer(
       }else if (req.url === "/compileJs/components/Planet.js") {
         res.writeHead(200, { "Content-Type": "text/javascript" });
         res.end(PlanetJs);
-      } 
+      }
     }
   }
 );

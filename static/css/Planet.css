@@ -71,7 +71,6 @@
   width: 1920px;
   height: 1920px;
   text-align: center;
-  line-height: 300px;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(1) {
   display: flex;
@@ -87,6 +86,10 @@
   margin-right: 3rem;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 1000px;
   height: 600px;
   border: 2px solid black;
@@ -94,11 +97,9 @@
   margin-left: 3rem;
   margin-bottom: 3rem;
 }
-#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div:nth-child(2) > div {
-  width: 30px;
-  height: 30px;
-  background: url("/static/img/github.png") no-repeat center;
-  background-size: cover;
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div:nth-child(2) > p {
+  width: 600px;
+  height: 50px;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(2) {
   background-color: orange;
