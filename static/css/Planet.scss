@@ -109,7 +109,15 @@
           }
         }
         & > li:nth-child(2) {
-          background-color: orange;
+          @include felx-setting(center,center);
+
+          & > div{
+            @include size(1500px, 550px);
+            border: 2px solid black;
+            border-radius: 2rem;
+            // text-align: center;
+            margin-bottom: 2.4rem;
+          }
         }
         & > li:nth-child(3) {
           background-color: blue;

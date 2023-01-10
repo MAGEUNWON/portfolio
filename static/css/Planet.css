@@ -102,7 +102,17 @@
   height: 50px;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(2) {
-  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div {
+  width: 1500px;
+  height: 550px;
+  border: 2px solid black;
+  border-radius: 2rem;
+  margin-bottom: 2.4rem;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(3) {
   background-color: blue;
