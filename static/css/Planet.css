@@ -84,7 +84,7 @@
 #root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div:nth-child(1) {
   width: 350px;
   height: 500px;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 20%;
   margin-right: 3rem;
 }
@@ -95,7 +95,7 @@
   flex-direction: column;
   width: 1000px;
   height: 600px;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 15%;
   margin-left: 3rem;
   margin-bottom: 3rem;
@@ -113,9 +113,53 @@
 #root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div {
   width: 1500px;
   height: 550px;
-  border: 2px solid black;
-  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 5rem;
   margin-bottom: 2.4rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div > p {
+  font-weight: bold;
+  font-size: 2rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div > div {
+  width: 1450px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div > div > div:nth-child(1) {
+  width: 483.3333333333px;
+  height: 440px;
+  background: url("/static/img/memo_green.png") no-repeat center;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div > div > div:nth-child(1) > p {
+  margin-top: 9rem;
+  line-height: 2rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div > div > div:nth-child(2) {
+  width: 483.3333333333px;
+  height: 440px;
+  background: url("/static/img/memo_yellow.png") no-repeat center;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div > div > div:nth-child(2) > p {
+  margin-top: 5.5rem;
+  margin-left: 9rem;
+  line-height: 2rem;
+  text-align: left;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div > div > div:nth-child(3) {
+  width: 483.3333333333px;
+  height: 440px;
+  background: url("/static/img/memo_pink.png") no-repeat center;
+  background-size: contain;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(3) {
   background-color: blue;
