@@ -21,7 +21,8 @@ var server = http.createServer(function (req, res) {
         PlanetJs: fs.readFileSync('compileJs/components/Planet.js'),
         memo_green: fs.readFileSync('static/img/memo_green.png'),
         memo_yellow: fs.readFileSync('static/img/memo_yellow.png'),
-        memo_pink: fs.readFileSync('static/img/memo_pink.png')
+        memo_pink: fs.readFileSync('static/img/memo_pink.png'),
+        randomPage: fs.readFileSync('static/img/randomPage.png')
     };
     // readFileSync한 것들 객체로 묶어 둠.
     var resSet = function (statuscode, contentType, fileName) {
@@ -81,6 +82,9 @@ var server = http.createServer(function (req, res) {
                     break;
                 case '/static/img/memo_pink.png':
                     resSet(200, 'image/png', File.memo_pink);
+                    break;
+                case '/static/img/randomPage.png':
+                    resSet(200, 'image/png', File.randomPage);
                     break;
             }
             break;

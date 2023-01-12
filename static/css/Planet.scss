@@ -123,7 +123,6 @@
             @include felx-setting(center, center, column);
             border: 2px solid white;
             border-radius: 5rem;
-            // text-align: center;
             margin-bottom: 2.4rem;
 
             & > p {
@@ -139,7 +138,7 @@
                 @include size(calc(1450px / 3), 440px);
                 background: url('/static/img/memo_green.png') no-repeat center;
                 background-size: contain;
-                // text-align: center;
+
                 & > p {
                   margin-top: 9rem;
                   line-height: 2rem;
@@ -168,10 +167,44 @@
           }
         }
         & > li:nth-child(3) {
-          background-color: blue;
+          @include felx-setting(center, center);
+
+          & > div{
+            @include size(1500px, 550px);
+            @include felx-setting(center, center, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+
+            & div:nth-child(1){
+              @include size(1400px,370px);
+              background: url('/static/img/randomPage.png') no-repeat center;
+                background-size: contain;
+            }
+
+            & div:nth-child(2){
+              @include size(1400px,140px);
+
+              & > p{
+                line-height: 2rem;
+                font-size: 1.5rem;
+                // text-align: left;
+                // z-index: -1;
+              }
+            }
+          }
+
         }
         & > li:nth-child(4) {
-          background-color: black;
+          @include felx-setting(center, center);
+
+          & > div{
+            @include size(1500px, 550px);
+            @include felx-setting(center, center, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+          }
         }
       }
     }

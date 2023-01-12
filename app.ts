@@ -20,6 +20,7 @@ interface readFlie {
     memo_green: Buffer;
     memo_yellow: Buffer;
     memo_pink: Buffer;
+    randomPage:Buffer;
   };
 }
 // 객체로 readFileSync 묶을 내용 interface로 타입 지정해줌.
@@ -45,6 +46,7 @@ const server = http.createServer(
       memo_green: fs.readFileSync('static/img/memo_green.png'),
       memo_yellow: fs.readFileSync('static/img/memo_yellow.png'),
       memo_pink: fs.readFileSync('static/img/memo_pink.png'),
+      randomPage: fs.readFileSync('static/img/randomPage.png'),
     };
     // readFileSync한 것들 객체로 묶어 둠.
 
@@ -84,57 +86,61 @@ const server = http.createServer(
         switch (_url) {
           case '/':
             resSet(200, 'text/html', File.main);
-            break;
+          break;
 
           case '/static/css/index.css':
             resSet(200, 'text/css', File.indexCss);
-            break;
+          break;
 
           case '/static/img/geunwonPlanet.png':
             resSet(200, 'image/png', File.PlanetImg);
-            break;
+          break;
 
           case '/static/img/universeBg.png':
             resSet(200, 'image/png', File.universeImg);
-            break;
+          break;
 
           case '/compileJs/index.js':
             resSet(200, 'text/javascript', File.indexJs);
-            break;
+          break;
 
           case '/Planet':
             resSet(200, 'text/html', File.Planet);
-            break;
+          break;
 
           case '/static/css/Planet.css':
             resSet(200, 'text/css', File.PlanetCss);
-            break;
+          break;
 
           case '/static/img/PlanetBg.png':
             resSet(200, 'image/png', File.PlanetBg);
-            break;
+          break;
 
           case '/static/img/HillBg.jpg':
             resSet(200, 'image/png', File.HillBg);
-            break;
+          break;
 
           case '/compileJs/components/Planet.js':
             resSet(200, 'text/javascript', File.PlanetJs);
-            break;
+          break;
 
           case '/static/img/memo_green.png':
             resSet(200, 'image/png', File.memo_green);
-            break;
+          break;
 
           case '/static/img/memo_yellow.png':
             resSet(200, 'image/png', File.memo_yellow);
-            break;
+          break;
 
           case '/static/img/memo_pink.png':
             resSet(200, 'image/png', File.memo_pink);
-            break;
+          break;
+
+          case '/static/img/randomPage.png':
+            resSet(200, 'image/png', File.randomPage);
+          break;
         }
-        break;
+      break;
     }
 
     // if (req.method === "GET") {
