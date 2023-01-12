@@ -1,7 +1,16 @@
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family:'Galmuri14'; //갈무리 14
+  // font-weight: 700; //갈무리 11 BOLD
+  font-family:'Galmuri11'; //갈무리 11
+  // font-family:'Galmuri9'; //갈무리 9
+  // font-family:'Galmuri7'; 갈무리 7
+  // font-size: large;
+
 }
 
 @mixin size($width, $height) {
