@@ -200,7 +200,7 @@
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(4) > div {
   width: 1500px;
-  height: 550px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,6 +208,32 @@
   border: 2px solid white;
   border-radius: 5rem;
   margin-bottom: 2.4rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(4) > div div:nth-child(1) {
+  width: 1400px;
+  height: 370px;
+  background: url("/static/img/signInPage.png") no-repeat center;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(4) > div div:nth-child(2) {
+  width: 1400px;
+  height: 140px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(4) > div div:nth-child(2) > p {
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(5) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(6) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 a.control_prev:hover,

@@ -22,7 +22,8 @@ var server = http.createServer(function (req, res) {
         memo_green: fs.readFileSync('static/img/memo_green.png'),
         memo_yellow: fs.readFileSync('static/img/memo_yellow.png'),
         memo_pink: fs.readFileSync('static/img/memo_pink.png'),
-        randomPage: fs.readFileSync('static/img/randomPage.png')
+        randomPage: fs.readFileSync('static/img/randomPage.png'),
+        signInPage: fs.readFileSync('static/img/signInPage.png')
     };
     // readFileSync한 것들 객체로 묶어 둠.
     var resSet = function (statuscode, contentType, fileName) {
@@ -85,6 +86,9 @@ var server = http.createServer(function (req, res) {
                     break;
                 case '/static/img/randomPage.png':
                     resSet(200, 'image/png', File.randomPage);
+                    break;
+                case '/static/img/signInPage.png':
+                    resSet(200, 'image/png', File.signInPage);
                     break;
             }
             break;
