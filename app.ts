@@ -22,6 +22,8 @@ interface readFlie {
     memo_pink: Buffer;
     randomPage:Buffer;
     signInPage:Buffer;
+    myInfoPage:Buffer;
+    boardPage:Buffer;
   };
 }
 // 객체로 readFileSync 묶을 내용 interface로 타입 지정해줌.
@@ -49,6 +51,8 @@ const server = http.createServer(
       memo_pink: fs.readFileSync('static/img/memo_pink.png'),
       randomPage: fs.readFileSync('static/img/randomPage.png'),
       signInPage: fs.readFileSync('static/img/signInPage.png'),
+      myInfoPage: fs.readFileSync('static/img/myInfoPage.png'),
+      boardPage: fs.readFileSync('static/img/boardPage.png'),
     };
     // readFileSync한 것들 객체로 묶어 둠.
 
@@ -144,6 +148,14 @@ const server = http.createServer(
 
           case '/static/img/signInPage.png':
             resSet(200, 'image/png', File.signInPage);
+          break;
+
+          case '/static/img/myInfoPage.png':
+            resSet(200, 'image/png', File.myInfoPage);
+          break;
+
+          case '/static/img/boardPage.png':
+            resSet(200, 'image/png', File.boardPage);
           break;
         }
       break;

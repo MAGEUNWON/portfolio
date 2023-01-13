@@ -222,10 +222,56 @@
 
         & > li:nth-child(5) {
           @include felx-setting(center, center);
+
+          & > div{
+            @include size(1500px, 500px);
+            @include felx-setting(center, center, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+
+            & div:nth-child(1){
+              @include size(1400px,370px);
+              background: url('/static/img/myInfoPage.png') no-repeat center;
+                background-size: contain;
+            }
+
+            & div:nth-child(2){
+              @include size(1400px,140px);
+
+              & > p{
+                line-height: 2rem;
+                font-size: 1.5rem;
+              }
+            }
+          }
         }
 
         & > li:nth-child(6) {
           @include felx-setting(center, center);
+
+          & > div{
+            @include size(1500px, 500px);
+            @include felx-setting(center, center, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+
+            & div:nth-child(1){
+              @include size(1400px,370px);
+              background: url('/static/img/boardPage.png') no-repeat center;
+                background-size: contain;
+            }
+
+            & div:nth-child(2){
+              @include size(1400px,140px);
+
+              & > p{
+                line-height: 2rem;
+                font-size: 1.5rem;
+              }
+            }
+          }
         }
 
       }
