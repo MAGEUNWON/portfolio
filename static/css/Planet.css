@@ -150,9 +150,9 @@
   background-size: contain;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div > div > div:nth-child(2) > p {
-  margin-top: 5.5rem;
+  margin-top: 6rem;
   margin-left: 9rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
   text-align: left;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div > div > div:nth-child(3) {
