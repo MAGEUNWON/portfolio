@@ -31,7 +31,7 @@
   & > div:nth-child(1) {
     @include size(100vw, 100vh);
     // @include felx-setting(center, center);
-    background: url('https://i.ibb.co/FXtrnWy/PlanetBg.png') no-repeat center; //우주선 이미지
+    background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/PlanetBg.png') no-repeat center; //우주선 이미지
     background-size: cover;
     overflow: hidden;
     position: absolute;
@@ -39,7 +39,7 @@
   }
   & > div:nth-child(2) {
     @include size(100vw, 100vh);
-    background: url('https://images2.imgbox.com/ff/fa/sKBCW7wG_o.jpg') no-repeat center; //언덕 배경 이미지
+    background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/HillBg.jpg') no-repeat center; //언덕 배경 이미지
     background-size: cover;
 
     & > #slider {
@@ -116,7 +116,18 @@
             }
           }
         }
-        & > li:nth-child(2) {
+
+        &> li:nth-child(2){
+          @include felx-setting(center, center);
+
+          & > div{
+            @include size(2000px,400px);
+            background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/Project_schedule.png') no-repeat center; //프로젝트 일정 이미지
+            background-size: contain;
+          }
+        }
+        
+        & > li:nth-child(3) {
           @include felx-setting(center, center);
 
           & > div {
@@ -137,7 +148,7 @@
 
               & > div:nth-child(1) {
                 @include size(calc(1450px / 3), 440px);
-                background: url('https://i.ibb.co/JR23qv3/memo-green.png') no-repeat center; //메모 초록색 이미지
+                background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_green.png') no-repeat center; //메모 초록색 이미지
                 background-size: contain;
 
                 & > p {
@@ -148,7 +159,7 @@
 
               & > div:nth-child(2) {
                 @include size(calc(1450px / 3), 440px);
-                background: url('https://i.ibb.co/rs1G6FY/memo-yellow.png') no-repeat center; //메모 노란색 이미지
+                background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_yellow.png') no-repeat center; //메모 노란색 이미지
                 background-size: contain;
 
                 & > p {
@@ -161,13 +172,20 @@
 
               & > div:nth-child(3) {
                 @include size(calc(1450px / 3), 440px);
-                background: url('https://images2.imgbox.com/aa/60/wVVvYpa5_o.png') no-repeat center; //메모 분홍색 이미지
+                background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_pink2.png') no-repeat center; //메모 분홍색 이미지
                 background-size: contain;
+
+                & > p {
+                  margin-top: 7rem;
+                  margin-left: 5.5rem;
+                  line-height: 2.2rem;
+                  text-align: left;
+                }
               }
             }
           }
         }
-        & > li:nth-child(3) {
+        & > li:nth-child(4) {
           @include felx-setting(center, center);
 
           & > div{
@@ -179,7 +197,7 @@
 
             & div:nth-child(1){
               @include size(1400px,370px);
-              background: url('https://images2.imgbox.com/31/13/qfeBvADi_o.png' ) no-repeat center; //랜덤 페이지 이미지
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/randomPage.png' ) no-repeat center; //랜덤 페이지 이미지
                 background-size: contain;
             }
             
@@ -194,33 +212,6 @@
           }
 
         }
-        & > li:nth-child(4) {
-          @include felx-setting(center, center);
-
-          & > div{
-            @include size(1500px, 500px);
-            @include felx-setting(center, center, column);
-            border: 2px solid white;
-            border-radius: 5rem;
-            margin-bottom: 2.4rem;
-
-            & div:nth-child(1){
-              @include size(1400px,370px);
-              background: url('https://images2.imgbox.com/40/8e/EiFXPfTh_o.png') no-repeat center; //회원가입 페이지 이미지
-                background-size: contain;
-            }
-          
-            & div:nth-child(2){
-              @include size(1400px,140px);
-
-              & > p{
-                line-height: 2rem;
-                font-size: 1.5rem;
-              }
-            }
-          }
-        }
-
         & > li:nth-child(5) {
           @include felx-setting(center, center);
 
@@ -233,10 +224,10 @@
 
             & div:nth-child(1){
               @include size(1400px,370px);
-              background: url('https://images2.imgbox.com/c9/24/sG1uukgo_o.png') no-repeat center; //마이페이지 이미지 
-                background-size: contain;
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/signInPage.png') no-repeat center; //회원가입 페이지 이미지
+              background-size: contain;
             }
-            
+          
             & div:nth-child(2){
               @include size(1400px,140px);
 
@@ -260,7 +251,34 @@
 
             & div:nth-child(1){
               @include size(1400px,370px);
-              background: url('https://images2.imgbox.com/3b/4d/4ieMhKAX_o.png') no-repeat center; //게시판 이미지 
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/myInfoPage.png') no-repeat center; //마이페이지 이미지 
+                background-size: contain;
+            }
+            
+            & div:nth-child(2){
+              @include size(1400px,140px);
+
+              & > p{
+                line-height: 2rem;
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+
+        & > li:nth-child(7) {
+          @include felx-setting(center, center);
+
+          & > div{
+            @include size(1500px, 500px);
+            @include felx-setting(center, center, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+
+            & div:nth-child(1){
+              @include size(1400px,370px);
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/boardPage.png') no-repeat center; //게시판 이미지 
                 background-size: contain;
             }
           

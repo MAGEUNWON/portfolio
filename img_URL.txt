@@ -1,22 +1,24 @@
-행성 이미지 : https://i.ibb.co/DVbZ3X9/geunwon-Planet.png
+행성 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/geunwonPlanet.png
 
-우주 이미지 : https://i.ibb.co/vmcFjB5/universe-Bg.png
+우주 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/universeBg.png
 
-우주선 이미지 : https://i.ibb.co/FXtrnWy/PlanetBg.png
+우주선 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/PlanetBg.png
 
-언덕 배경 이미지 : https://images2.imgbox.com/ff/fa/sKBCW7wG_o.jpg
+언덕 배경 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/HillBg.jpg
 
-메모 초록색 이미지 : https://i.ibb.co/JR23qv3/memo-green.png
+메모 초록색 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_green.png
 
-메모 노란색 이미지 : https://i.ibb.co/rs1G6FY/memo-yellow.png
+메모 노란색 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_yellow.png
 
-메모 분홍색 이미지 : https://images2.imgbox.com/aa/60/wVVvYpa5_o.png
+메모 분홍색 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_pink.png  / https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_pink2.png
 
-랜덤 페이지 이미지 : https://images2.imgbox.com/31/13/qfeBvADi_o.png
+랜덤 페이지 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/randomPage.png
 
-회원 가입 페이지 이미지 : https://images2.imgbox.com/40/8e/EiFXPfTh_o.png
+회원 가입 페이지 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/signInPage.png
 
-내 정보 페이지 이미지 : https://images2.imgbox.com/c9/24/sG1uukgo_o.png
+내 정보 페이지 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/myInfoPage.png
 
-게시판 페이지 이미지 : https://images2.imgbox.com/3b/4d/4ieMhKAX_o.png
+게시판 페이지 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/boardPage.png
+
+프로젝트 일정 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/Project_schedule.png
 
