@@ -184,7 +184,7 @@
                   line-height: 2rem;
                 }
               }
-
+              
               & > div:nth-child(2) {
                 @include size(calc(1450px / 3), 440px);
                 background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_yellow.png') no-repeat center; //메모 노란색 이미지
