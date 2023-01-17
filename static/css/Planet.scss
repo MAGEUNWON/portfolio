@@ -90,11 +90,39 @@
           display: block;
           margin: 0;
           padding: 0;
-          @include size(1920px, 1920px);
+          @include size(1920px, 1920px); //1920
           text-align: center;
           // line-height: 300px;
         }
-        & > li:nth-child(1) {
+
+        & > li:nth-child(1) { //7 원래는 마지막 슬라이드. 복사해서 첫 번째 슬라이드 앞으로 옴, 슬라이드 다 완성하면 완성된 마지막 슬라이로 다시 순서 맞춰 주면 됨.
+          @include felx-setting(center, center);
+
+          & > div{
+            @include size(1500px, 500px);
+            @include felx-setting(center, center, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+
+            & div:nth-child(1){
+              @include size(1400px,370px);
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/boardPage.png') no-repeat center; //게시판 이미지 
+                background-size: contain;
+            }
+          
+            & div:nth-child(2){
+              @include size(1400px,140px);
+
+              & > p{
+                line-height: 2rem;
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+
+        & > li:nth-child(2) {
           @include felx-setting(center, center);
           // background-color: red;
           & > div:nth-child(1) {
@@ -117,7 +145,7 @@
           }
         }
 
-        &> li:nth-child(2){
+        &> li:nth-child(3){
           @include felx-setting(center, center);
 
           & > div{
@@ -127,7 +155,7 @@
           }
         }
         
-        & > li:nth-child(3) {
+        & > li:nth-child(4) {
           @include felx-setting(center, center);
 
           & > div {
@@ -177,7 +205,7 @@
 
                 & > p {
                   margin-top: 7rem;
-                  margin-left: 5.5rem;
+                  margin-left: 5.7rem;
                   line-height: 2.2rem;
                   text-align: left;
                 }
@@ -185,7 +213,7 @@
             }
           }
         }
-        & > li:nth-child(4) {
+        & > li:nth-child(5) {
           @include felx-setting(center, center);
 
           & > div{
@@ -212,7 +240,7 @@
           }
 
         }
-        & > li:nth-child(5) {
+        & > li:nth-child(6) {
           @include felx-setting(center, center);
 
           & > div{
@@ -239,7 +267,7 @@
           }
         }
 
-        & > li:nth-child(6) {
+        & > li:nth-child(7) {
           @include felx-setting(center, center);
 
           & > div{
@@ -266,7 +294,7 @@
           }
         }
 
-        & > li:nth-child(7) {
+        & > li:nth-child(8) {
           @include felx-setting(center, center);
 
           & > div{
@@ -289,6 +317,29 @@
                 line-height: 2rem;
                 font-size: 1.5rem;
               }
+            }
+          }
+        }
+
+        & > li:nth-child(9) { // 복사한 첫번째 슬라이드. 슬라이드 다 완성되면 순서 번호만 바꿔주면 됨
+          @include felx-setting(center, center);
+          // background-color: red;
+          & > div:nth-child(1) {
+            @include size(350px, 500px);
+            border: 2px solid white;
+            border-radius: 20%;
+            margin-right: 3rem;
+          }
+          & > div:nth-child(2) {
+            @include felx-setting(center, center, column);
+            @include size(1000px, 600px);
+            border: 2px solid white;
+            border-radius: 15%;
+            margin-left: 3rem;
+            margin-bottom: 3rem;
+
+            & > p {
+              @include size(600px, 50px);
             }
           }
         }

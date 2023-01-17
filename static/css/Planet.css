@@ -81,14 +81,45 @@
   align-items: center;
   flex-direction: row;
 }
-#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div:nth-child(1) {
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div {
+  width: 1500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 5rem;
+  margin-bottom: 2.4rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div div:nth-child(1) {
+  width: 1400px;
+  height: 370px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/boardPage.png") no-repeat center;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div div:nth-child(2) {
+  width: 1400px;
+  height: 140px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div div:nth-child(2) > p {
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div:nth-child(1) {
   width: 350px;
   height: 500px;
   border: 2px solid white;
   border-radius: 20%;
   margin-right: 3rem;
 }
-#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div:nth-child(2) {
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,21 +131,9 @@
   margin-left: 3rem;
   margin-bottom: 3rem;
 }
-#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div:nth-child(2) > p {
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div:nth-child(2) > p {
   width: 600px;
   height: 50px;
-}
-#root > div:nth-child(2) > #slider > ul > li:nth-child(2) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div {
-  width: 2000px;
-  height: 400px;
-  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/Project_schedule.png") no-repeat center;
-  background-size: contain;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(3) {
   display: flex;
@@ -123,61 +142,10 @@
   flex-direction: row;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(3) > div {
-  width: 1500px;
-  height: 550px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 2px solid white;
-  border-radius: 5rem;
-  margin-bottom: 2.4rem;
-}
-#root > div:nth-child(2) > #slider > ul > li:nth-child(3) > div > p {
-  font-weight: bold;
-  font-size: 2rem;
-}
-#root > div:nth-child(2) > #slider > ul > li:nth-child(3) > div > div {
-  width: 1450px;
-  height: 450px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-#root > div:nth-child(2) > #slider > ul > li:nth-child(3) > div > div > div:nth-child(1) {
-  width: 483.3333333333px;
-  height: 440px;
-  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_green.png") no-repeat center;
+  width: 2000px;
+  height: 400px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/Project_schedule.png") no-repeat center;
   background-size: contain;
-}
-#root > div:nth-child(2) > #slider > ul > li:nth-child(3) > div > div > div:nth-child(1) > p {
-  margin-top: 9rem;
-  line-height: 2rem;
-}
-#root > div:nth-child(2) > #slider > ul > li:nth-child(3) > div > div > div:nth-child(2) {
-  width: 483.3333333333px;
-  height: 440px;
-  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_yellow.png") no-repeat center;
-  background-size: contain;
-}
-#root > div:nth-child(2) > #slider > ul > li:nth-child(3) > div > div > div:nth-child(2) > p {
-  margin-top: 6rem;
-  margin-left: 9rem;
-  line-height: 1.5rem;
-  text-align: left;
-}
-#root > div:nth-child(2) > #slider > ul > li:nth-child(3) > div > div > div:nth-child(3) {
-  width: 483.3333333333px;
-  height: 440px;
-  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_pink2.png") no-repeat center;
-  background-size: contain;
-}
-#root > div:nth-child(2) > #slider > ul > li:nth-child(3) > div > div > div:nth-child(3) > p {
-  margin-top: 7rem;
-  margin-left: 5.5rem;
-  line-height: 2.2rem;
-  text-align: left;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(4) {
   display: flex;
@@ -196,19 +164,51 @@
   border-radius: 5rem;
   margin-bottom: 2.4rem;
 }
-#root > div:nth-child(2) > #slider > ul > li:nth-child(4) > div div:nth-child(1) {
-  width: 1400px;
-  height: 370px;
-  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/randomPage.png") no-repeat center;
+#root > div:nth-child(2) > #slider > ul > li:nth-child(4) > div > p {
+  font-weight: bold;
+  font-size: 2rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(4) > div > div {
+  width: 1450px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(4) > div > div > div:nth-child(1) {
+  width: 483.3333333333px;
+  height: 440px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_green.png") no-repeat center;
   background-size: contain;
 }
-#root > div:nth-child(2) > #slider > ul > li:nth-child(4) > div div:nth-child(2) {
-  width: 1400px;
-  height: 140px;
-}
-#root > div:nth-child(2) > #slider > ul > li:nth-child(4) > div div:nth-child(2) > p {
+#root > div:nth-child(2) > #slider > ul > li:nth-child(4) > div > div > div:nth-child(1) > p {
+  margin-top: 9rem;
   line-height: 2rem;
-  font-size: 1.5rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(4) > div > div > div:nth-child(2) {
+  width: 483.3333333333px;
+  height: 440px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_yellow.png") no-repeat center;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(4) > div > div > div:nth-child(2) > p {
+  margin-top: 6rem;
+  margin-left: 9rem;
+  line-height: 1.5rem;
+  text-align: left;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(4) > div > div > div:nth-child(3) {
+  width: 483.3333333333px;
+  height: 440px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_pink2.png") no-repeat center;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(4) > div > div > div:nth-child(3) > p {
+  margin-top: 7rem;
+  margin-left: 5.7rem;
+  line-height: 2.2rem;
+  text-align: left;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(5) {
   display: flex;
@@ -218,7 +218,7 @@
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(5) > div {
   width: 1500px;
-  height: 500px;
+  height: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,7 +230,7 @@
 #root > div:nth-child(2) > #slider > ul > li:nth-child(5) > div div:nth-child(1) {
   width: 1400px;
   height: 370px;
-  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/signInPage.png") no-repeat center;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/randomPage.png") no-repeat center;
   background-size: contain;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(5) > div div:nth-child(2) {
@@ -261,7 +261,7 @@
 #root > div:nth-child(2) > #slider > ul > li:nth-child(6) > div div:nth-child(1) {
   width: 1400px;
   height: 370px;
-  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/myInfoPage.png") no-repeat center;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/signInPage.png") no-repeat center;
   background-size: contain;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(6) > div div:nth-child(2) {
@@ -292,7 +292,7 @@
 #root > div:nth-child(2) > #slider > ul > li:nth-child(7) > div div:nth-child(1) {
   width: 1400px;
   height: 370px;
-  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/boardPage.png") no-repeat center;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/myInfoPage.png") no-repeat center;
   background-size: contain;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(7) > div div:nth-child(2) {
@@ -302,6 +302,66 @@
 #root > div:nth-child(2) > #slider > ul > li:nth-child(7) > div div:nth-child(2) > p {
   line-height: 2rem;
   font-size: 1.5rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(8) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(8) > div {
+  width: 1500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 5rem;
+  margin-bottom: 2.4rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(8) > div div:nth-child(1) {
+  width: 1400px;
+  height: 370px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/boardPage.png") no-repeat center;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(8) > div div:nth-child(2) {
+  width: 1400px;
+  height: 140px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(8) > div div:nth-child(2) > p {
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(9) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(9) > div:nth-child(1) {
+  width: 350px;
+  height: 500px;
+  border: 2px solid white;
+  border-radius: 20%;
+  margin-right: 3rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(9) > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1000px;
+  height: 600px;
+  border: 2px solid white;
+  border-radius: 15%;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(9) > div:nth-child(2) > p {
+  width: 600px;
+  height: 50px;
 }
 
 a.control_prev:hover,
