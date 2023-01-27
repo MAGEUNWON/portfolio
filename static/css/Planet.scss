@@ -5,10 +5,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Galmuri14'; //갈무리 14
+  // font-family: 'Galmuri14'; //갈무리 14
   // font-weight: 700; //갈무리 11 BOLD
-  font-family: 'Galmuri11'; //갈무리 11
-  // font-family:'Galmuri9'; //갈무리 9
+  // font-family: 'Galmuri11'; //갈무리 11
+  font-family:'Galmuri9'; //갈무리 9
   // font-family:'Galmuri7'; 갈무리 7
   // font-size: large;
 }
@@ -25,6 +25,8 @@
   flex-direction: $direction;
 }
 
+$color-1 : white;
+
 #root {
   @include size(100vw, 100vh);
 
@@ -35,7 +37,12 @@
     background-size: cover;
     overflow: hidden;
     position: absolute;
-    z-index: 100;
+    z-index: 999;
+    //이 이미지 z-index 때문에 click event가 안먹혀서 설정해줌
+    //z-index 위에있는 영역에서 이벤트 발생하고 싶을 때 pointer-events:none을 해주면 됨. 
+    //none으로 설정하면 해당 요소는 마우스 이벤트(click, hover, drag, active 등)를 비활성화 함. 
+    //하위 요소중에 이벤트 활성화 된 엘리먼트가 있다면 하위 엘리먼트를 탐색
+    pointer-events: none;
   }
   & > div:nth-child(2) {
     @include size(100vw, 100vh);
@@ -95,66 +102,120 @@
           // line-height: 300px;
         }
 
-        & > li:nth-child(1) { //7 원래는 마지막 슬라이드. 복사해서 첫 번째 슬라이드 앞으로 옴, 슬라이드 다 완성하면 완성된 마지막 슬라이로 다시 순서 맞춰 주면 됨.
+        //마지막 슬라이드. 복사해서 첫 번째 슬라이드 앞으로 옴, 슬라이드 다 완성하면 완성된 마지막 슬라이로 다시 순서 맞춰 주면 됨.
+        & > li:nth-child(1) { 
           @include felx-setting(center, center);
 
           & > div{
-            @include size(1500px, 500px);
+            @include size(1500px, 550px);
             @include felx-setting(center, center, column);
             border: 2px solid white;
             border-radius: 5rem;
             margin-bottom: 2.4rem;
-
-            & div:nth-child(1){
-              @include size(1400px,370px);
-              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/boardPage.png') no-repeat center; //게시판 이미지 
-                background-size: contain;
-            }
-          
-            & div:nth-child(2){
-              @include size(1400px,140px);
-
-              & > p{
-                line-height: 2rem;
-                font-size: 1.5rem;
-              }
-            }
           }
         }
 
-        & > li:nth-child(2) {
+        //이게 프로젝트에서 첫번째 슬라이드 부분(소개 화면)
+        & > li:nth-child(2) { 
           @include felx-setting(center, center);
-          // background-color: red;
+          
+          //내 사진 넣기
           & > div:nth-child(1) {
-            @include size(350px, 500px);
+            @include size(400px, 500px);
             border: 2px solid white;
             border-radius: 20%;
             margin-right: 3rem;
           }
+
+
           & > div:nth-child(2) {
-            @include felx-setting(center, center, column);
-            @include size(1000px, 600px);
+            @include felx-setting(space-evenly, center, column);
+            @include size(800px, 600px);
             border: 2px solid white;
             border-radius: 15%;
             margin-left: 3rem;
             margin-bottom: 3rem;
 
-            & > p {
-              @include size(600px, 50px);
+            //내 소개 부분
+            & > div:nth-child(1){
+              @include size(550px,80px);
+              margin-top: 5rem;
+
+              & >p{
+                // @include size(600px, 50px);
+                font-size: 1.5rem;
+                text-align: center;
+                
+              }
             }
-          }
+
+            //깃 부분
+            & > div:nth-child(2){
+              @include size(550px,80px);
+              @include felx-setting(space-around,center);
+              margin-top: 5rem;
+
+              //깃허브 이미지 넣기
+              & >div {
+                @include size(40px,40px);
+                background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/github+1.png")
+                no-repeat center;
+                background-size: contain;
+              }
+
+              & > p {
+                @include size(400px, 50px);
+                text-align: center;
+                margin-top: 22px;
+
+              }
+            }
+
+            //지킬 부분
+            & >div:nth-child(3){
+              @include size(550px,80px);
+              @include felx-setting(space-around,center);
+              margin-bottom: 5rem;
+
+
+              //지킬 이미지 넣기
+              & >div {
+                @include size(60px,60px);
+                background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_jekyll.png")
+                no-repeat center;
+                background-size: contain;
+              }
+
+              & > p {
+                @include size(400px, 50px);
+                text-align: center;
+                margin-top: 20px;
+              }
+            }
+            
+          }        
         }
 
+        //프로젝트 일정 소개 페이지
         &> li:nth-child(3){
           @include felx-setting(center, center);
 
           & > div{
-            @include size(2000px,400px);
-            background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/Project_schedule.png') no-repeat center; //프로젝트 일정 이미지
-            background-size: contain;
+            @include size(1500px, 550px);
+            @include felx-setting(center, center, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+
+            & >div{
+              @include size(2000px,400px);
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/Project_schedule.png') no-repeat center; //프로젝트 일정 이미지
+              background-size: contain;
+            }
           }
         }
         
+        //영화 프로젝트 소개
         & > li:nth-child(4) {
           @include felx-setting(center, center);
 
@@ -174,30 +235,35 @@
               @include size(1450px, 450px);
               @include felx-setting(center, center);
 
+              //초록 메모
               & > div:nth-child(1) {
                 @include size(calc(1450px / 3), 440px);
                 background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_green.png') no-repeat center; //메모 초록색 이미지
                 background-size: contain;
 
                 & > p {
+                  font-size: 1.5rem;
                   margin-top: 9rem;
                   line-height: 2rem;
                 }
               }
               
+              //노란 메모
               & > div:nth-child(2) {
                 @include size(calc(1450px / 3), 440px);
                 background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_yellow.png') no-repeat center; //메모 노란색 이미지
                 background-size: contain;
 
                 & > p {
-                  margin-top: 6rem;
-                  margin-left: 9rem;
-                  line-height: 1.5rem;
+                  font-size: 1.1rem;
+                  margin-top: 6.8rem;
+                  margin-left: 5.5rem;
+                  line-height: 1.4rem;
                   text-align: left;
                 }
               }
 
+              //분홍 메모
               & > div:nth-child(3) {
                 @include size(calc(1450px / 3), 440px);
                 background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_pink2.png') no-repeat center; //메모 분홍색 이미지
@@ -205,7 +271,7 @@
 
                 & > p {
                   margin-top: 7rem;
-                  margin-left: 5.7rem;
+                  margin-left: 5.3rem;
                   line-height: 2.2rem;
                   text-align: left;
                 }
@@ -213,6 +279,8 @@
             }
           }
         }
+
+        //랜덤 페이지 설명
         & > li:nth-child(5) {
           @include felx-setting(center, center);
 
@@ -240,6 +308,8 @@
           }
 
         }
+
+        //회원가입 화면 설명
         & > li:nth-child(6) {
           @include felx-setting(center, center);
 
@@ -267,6 +337,7 @@
           }
         }
 
+        //내 정보 수정 페이지
         & > li:nth-child(7) {
           @include felx-setting(center, center);
 
@@ -294,6 +365,7 @@
           }
         }
 
+        //게시판 글 쓰기 페이지
         & > li:nth-child(8) {
           @include felx-setting(center, center);
 
@@ -321,7 +393,17 @@
           }
         }
 
-        & > li:nth-child(9) { // 복사한 첫번째 슬라이드. 슬라이드 다 완성되면 순서 번호만 바꿔주면 됨
+        //영화 리뷰 페이지
+        & > li:nth-child(9){
+          @include size(1500px, 550px);
+          @include felx-setting(center, center, column);
+          border: 2px solid white;
+          border-radius: 5rem;
+          margin-bottom: 2.4rem;
+        }
+
+        // 복사한 첫번째 슬라이드. 슬라이드 다 완성되면 순서 번호만 바꿔주면 됨
+        & > li:nth-child(10) { 
           @include felx-setting(center, center);
           // background-color: red;
           & > div:nth-child(1) {

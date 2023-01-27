@@ -3,8 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Galmuri14";
-  font-family: "Galmuri11";
+  font-family: "Galmuri9";
 }
 
 #root {
@@ -18,7 +17,8 @@
   background-size: cover;
   overflow: hidden;
   position: absolute;
-  z-index: 100;
+  z-index: 999;
+  pointer-events: none;
 }
 #root > div:nth-child(2) {
   width: 100vw;
@@ -83,7 +83,7 @@
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div {
   width: 1500px;
-  height: 500px;
+  height: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,20 +92,6 @@
   border-radius: 5rem;
   margin-bottom: 2.4rem;
 }
-#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div div:nth-child(1) {
-  width: 1400px;
-  height: 370px;
-  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/boardPage.png") no-repeat center;
-  background-size: contain;
-}
-#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div div:nth-child(2) {
-  width: 1400px;
-  height: 140px;
-}
-#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div div:nth-child(2) > p {
-  line-height: 2rem;
-  font-size: 1.5rem;
-}
 #root > div:nth-child(2) > #slider > ul > li:nth-child(2) {
   display: flex;
   justify-content: center;
@@ -113,7 +99,7 @@
   flex-direction: row;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div:nth-child(1) {
-  width: 350px;
+  width: 400px;
   height: 500px;
   border: 2px solid white;
   border-radius: 20%;
@@ -121,19 +107,66 @@
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div:nth-child(2) {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  width: 1000px;
+  width: 800px;
   height: 600px;
   border: 2px solid white;
   border-radius: 15%;
   margin-left: 3rem;
   margin-bottom: 3rem;
 }
-#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div:nth-child(2) > p {
-  width: 600px;
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  width: 550px;
+  height: 80px;
+  margin-top: 5rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div:nth-child(2) > div:nth-child(1) > p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+  width: 550px;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 5rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div {
+  width: 40px;
+  height: 40px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/github+1.png") no-repeat center;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div:nth-child(2) > div:nth-child(2) > p {
+  width: 400px;
   height: 50px;
+  text-align: center;
+  margin-top: 22px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div:nth-child(2) > div:nth-child(3) {
+  width: 550px;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 5rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div {
+  width: 60px;
+  height: 60px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_jekyll.png") no-repeat center;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div:nth-child(2) > div:nth-child(3) > p {
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  margin-top: 20px;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(3) {
   display: flex;
@@ -142,6 +175,17 @@
   flex-direction: row;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(3) > div {
+  width: 1500px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 5rem;
+  margin-bottom: 2.4rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(3) > div > div {
   width: 2000px;
   height: 400px;
   background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/Project_schedule.png") no-repeat center;
@@ -183,6 +227,7 @@
   background-size: contain;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(4) > div > div > div:nth-child(1) > p {
+  font-size: 1.5rem;
   margin-top: 9rem;
   line-height: 2rem;
 }
@@ -193,9 +238,10 @@
   background-size: contain;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(4) > div > div > div:nth-child(2) > p {
-  margin-top: 6rem;
-  margin-left: 9rem;
-  line-height: 1.5rem;
+  font-size: 1.1rem;
+  margin-top: 6.8rem;
+  margin-left: 5.5rem;
+  line-height: 1.4rem;
   text-align: left;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(4) > div > div > div:nth-child(3) {
@@ -206,7 +252,7 @@
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(4) > div > div > div:nth-child(3) > p {
   margin-top: 7rem;
-  margin-left: 5.7rem;
+  margin-left: 5.3rem;
   line-height: 2.2rem;
   text-align: left;
 }
@@ -335,19 +381,30 @@
   font-size: 1.5rem;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(9) {
+  width: 1500px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 5rem;
+  margin-bottom: 2.4rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(10) {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-#root > div:nth-child(2) > #slider > ul > li:nth-child(9) > div:nth-child(1) {
+#root > div:nth-child(2) > #slider > ul > li:nth-child(10) > div:nth-child(1) {
   width: 350px;
   height: 500px;
   border: 2px solid white;
   border-radius: 20%;
   margin-right: 3rem;
 }
-#root > div:nth-child(2) > #slider > ul > li:nth-child(9) > div:nth-child(2) {
+#root > div:nth-child(2) > #slider > ul > li:nth-child(10) > div:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -359,7 +416,7 @@
   margin-left: 3rem;
   margin-bottom: 3rem;
 }
-#root > div:nth-child(2) > #slider > ul > li:nth-child(9) > div:nth-child(2) > p {
+#root > div:nth-child(2) > #slider > ul > li:nth-child(10) > div:nth-child(2) > p {
   width: 600px;
   height: 50px;
 }

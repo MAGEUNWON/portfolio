@@ -1,3 +1,5 @@
+//typescript 디버거 tasks.json 빌드 한글로 되있어서 안됬었음. 바꿔서 이제 디버거 됨. 
+
 const slider = document.getElementById("slider");
 // console.dir(slider)
 const ul: HTMLUListElement | any = document.querySelector("ul");
@@ -8,11 +10,14 @@ const liLen: any = li.length;
 // console.dir(liLen);
 const nextButton: HTMLElement | any = document.getElementById("nextButton");
 const prevButton: HTMLElement | any = document.getElementById("prevButton");
-//typescript 디버거 tasks.json 빌드 한글로 되있어서 안됬음
+const git = document.getElementById("git") as HTMLElement;
+console.log(git)
+const jekyll = document.getElementById("jekyll") as HTMLElement;
 
-// const liWidth = li[0].offsetWidth;
+
+const liWidth = li[0].offsetWidth;
 // console.log(liWidth);
-const liWidth = 1920;
+// const liWidth = 1920;
 // console.log(li.length);
 // console.dir(li.length - 1);
 
@@ -131,3 +136,14 @@ prevButton.addEventListener('click', ()=>{
 // nextButton.addEventListener("click", () => {
 //   NslideCount();
 // });
+
+//깃허브 페이지 이동
+git.addEventListener('click', ()=>{
+  console.log('깃클릭')
+  window.open('https://github.com/MAGEUNWON', 'target=_blank','fullscreen')
+});
+
+//jekyll 블로그 이동
+jekyll.addEventListener('click', ()=>{
+  window.open('https://mageunwon.github.io/')
+});

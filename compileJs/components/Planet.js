@@ -1,4 +1,5 @@
 "use strict";
+//typescript 디버거 tasks.json 빌드 한글로 되있어서 안됬었음. 바꿔서 이제 디버거 됨. 
 var slider = document.getElementById("slider");
 // console.dir(slider)
 var ul = document.querySelector("ul");
@@ -9,10 +10,12 @@ var liLen = li.length;
 // console.dir(liLen);
 var nextButton = document.getElementById("nextButton");
 var prevButton = document.getElementById("prevButton");
-//typescript 디버거 tasks.json 빌드 한글로 되있어서 안됬음
-// const liWidth = li[0].offsetWidth;
+var git = document.getElementById("git");
+console.log(git);
+var jekyll = document.getElementById("jekyll");
+var liWidth = li[0].offsetWidth;
 // console.log(liWidth);
-var liWidth = 1920;
+// const liWidth = 1920;
 // console.log(li.length);
 // console.dir(li.length - 1);
 var totalWidth = liWidth * (liLen + 2);
@@ -115,4 +118,13 @@ prevButton.addEventListener('click', function () {
 // nextButton.addEventListener("click", () => {
 //   NslideCount();
 // });
+//깃허브 페이지 이동
+git.addEventListener('click', function () {
+    console.log('깃클릭');
+    window.open('https://github.com/MAGEUNWON', 'target=_blank', 'fullscreen');
+});
+//jekyll 블로그 이동
+jekyll.addEventListener('click', function () {
+    window.open('https://mageunwon.github.io/');
+});
 //# sourceMappingURL=Planet.js.map

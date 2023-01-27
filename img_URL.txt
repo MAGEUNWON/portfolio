@@ -22,3 +22,6 @@
 
 프로젝트 일정 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/Project_schedule.png
 
+깃허브 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/github+1.png
+
+지킬 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_jekyll.png
