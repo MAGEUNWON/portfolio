@@ -104,7 +104,7 @@ $color-1 : white;
 
         //마지막 슬라이드. 복사해서 첫 번째 슬라이드 앞으로 옴, 슬라이드 다 완성하면 완성된 마지막 슬라이로 다시 순서 맞춰 주면 됨.
         & > li:nth-child(1){
-          @include felx-setting(center,center);
+          @include felx-setting(center, center);
 
           & > div{
             @include size(1500px, 550px);
@@ -112,9 +112,136 @@ $color-1 : white;
             border: 2px solid white;
             border-radius: 5rem;
             margin-bottom: 2.4rem;
+
+            & > div:nth-child(1){
+              @include size(1000px,90px);
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/traffic_appendix.png') no-repeat; //교통 별첨 이미지
+              background-size: contain;
+              margin-left: 2rem;
+              margin-top: 2rem;
+            }
+
+            & > div:nth-child(2){
+              @include felx-setting(space-evenly,flex-start,column);
+              @include size(1000px,400px);
+              margin-left: 3rem;
+
+              & >div:nth-child(1){
+                @include size(1000px,50px);
+                @include felx-setting(flex-start,flex-start);
+                // margin-bottom: 15rem;
+                // margin-left: 2rem;
+
+                & >div{
+                @include size(40px,40px);
+                  background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/octicon_mark-github-16.png') no-repeat; //깃허브 글씨 없는 이미지
+                  background-size: contain; 
+                  // margin-left: 2rem;
+                  // margin-bottom: 5rem;
+                }
+
+                & > span:nth-child(2){
+                  @include size(100px, 50px);
+                  text-align: center;
+                  margin-top: 7px;
+                }
+
+                & > span:nth-child(3){
+                  @include size(400px, 50px);
+                  text-align: center;
+                  margin-top: 7px;
+                }
+
+              }
+
+              & >div:nth-child(2){
+                @include size(1000px,50px);
+                @include felx-setting(flex-start,flex-start);
+                // margin-bottom: 15rem;
+                // margin-left: 2rem;
+
+                & >div{
+                @include size(40px,40px);
+                  background: url(' https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_google-drive.png') no-repeat; //구글 드라이브 이미지
+                  background-size: contain; 
+                  // margin-left: 2rem;
+                  // margin-bottom: 5rem;
+                }
+
+                & > span:nth-child(2){
+                  @include size(100px, 50px);
+                  text-align: center;
+                  margin-top: 7px;
+                }
+
+                & > span:nth-child(3){
+                  @include size(700px, 50px);
+                  text-align: center;
+                  margin-top: 7px;
+                  margin-left: 11px;
+                }
+
+              }
+
+              & >div:nth-child(3){
+                @include size(1000px,50px);
+                @include felx-setting(flex-start,flex-start);
+                // margin-bottom: 15rem;
+                // margin-left: 2rem;
+
+                & >div{
+                @include size(40px,40px);
+                  background: url(' https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_google-drive.png') no-repeat; //구글 드라이브 이미지
+                  background-size: contain; 
+                  // margin-left: 2rem;
+                  // margin-bottom: 5rem;
+                }
+
+                & > span:nth-child(2){
+                  @include size(100px, 50px);
+                  text-align: center;
+                  margin-top: 7px;
+                }
+
+                & > span:nth-child(3){
+                  @include size(700px, 50px);
+                  text-align: center;
+                  margin-top: 7px;
+                  margin-left: 11px;
+                }
+
+              }
+
+              & >div:nth-child(4){
+                @include size(1000px,50px);
+                @include felx-setting(flex-start,flex-start);
+                // margin-bottom: 15rem;
+                // margin-left: 2rem;
+
+                & >div{
+                @include size(40px,40px);
+                  background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_youtube-icon.png') no-repeat; //유튜브 이미지
+                  background-size: contain; 
+                  // margin-left: 2rem;
+                  // margin-bottom: 5rem;
+                }
+
+                & > span:nth-child(2){
+                  @include size(120px, 50px);
+                  text-align: center;
+                  margin-top: 7px;
+                }
+
+                & > span:nth-child(3){
+                  @include size(400px, 50px);
+                  text-align: center;
+                  margin-top: 7px;
+                  padding-right: 12px;
+                }
+              }
+            }
           }
         }
-
 
         //이게 프로젝트에서 첫번째 슬라이드 부분(소개 화면)
         & > li:nth-child(2) { 
@@ -422,7 +549,7 @@ $color-1 : white;
 
             & > div:nth-child(1){
               @include size(1000px,90px);
-              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/appendix.png') no-repeat;
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/appendix.png') no-repeat; //영화 별첨 이미지
               background-size: contain;
               margin-left: 2rem;
               margin-bottom: 5rem;
@@ -438,15 +565,21 @@ $color-1 : white;
               //깃 이미지 넣기
               & >div {
                 @include size(40px,40px);
-                background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/github+1.png")
-                no-repeat center;
+                background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/octicon_mark-github-16.png")
+                no-repeat;
                 background-size: contain;
               }
 
-              & > p {
+              & > span:nth-child(2){
+                @include size(100px, 50px);
+                text-align: center;
+                margin-top: 1rem;
+              }
+
+              & > span:nth-child(3){
                 @include size(400px, 50px);
                 text-align: center;
-                margin-top: 26px;
+                margin-top: 1rem;
               }
 
             }
@@ -531,7 +664,7 @@ $color-1 : white;
 
             & > div:nth-child(1){
               @include size(1400px,370px);
-              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/stockMain.png' ) no-repeat center; //주식 메인 페이지 이미지
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/stock-main.png' ) no-repeat center; //주식 메인 페이지 이미지
                 background-size: contain;
             }
             
@@ -630,19 +763,20 @@ $color-1 : white;
 
             & > div:nth-child(1){
               @include size(1000px,90px);
-              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/stock_appendix.png') no-repeat center; //주식 별첨 이미지
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/stock_appendix.png') no-repeat; //주식 별첨 이미지
               background-size: contain;
-              // margin-left: 2rem;
-              // margin-bottom: 5rem;
+              margin-left: 2rem;
+              margin-top: 2rem;
             }
 
             & > div:nth-child(2){
-              @include flex-setting(center,flex-start,column);
+              @include felx-setting(space-evenly,flex-start,column);
               @include size(1000px,400px);
+              margin-left: 3rem;
 
               & >div:nth-child(1){
-                @include size(0,50px);
-                @include felx-setting(space-evenly);
+                @include size(1000px,50px);
+                @include felx-setting(flex-start,flex-start);
                 // margin-bottom: 15rem;
                 // margin-left: 2rem;
 
@@ -650,21 +784,27 @@ $color-1 : white;
                 @include size(40px,40px);
                   background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/octicon_mark-github-16.png') no-repeat; //깃허브 글씨 없는 이미지
                   background-size: contain; 
-                  margin-left: 2rem;
-                  margin-bottom: 5rem;
+                  // margin-left: 2rem;
+                  // margin-bottom: 5rem;
                 }
 
-                & > p{
+                & > span:nth-child(2){
+                  @include size(100px, 50px);
+                  text-align: center;
+                  margin-top: 7px;
+                }
+
+                & > span:nth-child(3){
                   @include size(400px, 50px);
                   text-align: center;
-                  // margin-top: 26px;  
+                  margin-top: 7px;
                 }
 
               }
 
               & >div:nth-child(2){
-                @include size(0,50px);
-                @include felx-setting(space-evenly);
+                @include size(1000px,50px);
+                @include felx-setting(flex-start,flex-start);
                 // margin-bottom: 15rem;
                 // margin-left: 2rem;
 
@@ -672,21 +812,28 @@ $color-1 : white;
                 @include size(40px,40px);
                   background: url(' https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_google-drive.png') no-repeat; //구글 드라이브 이미지
                   background-size: contain; 
-                  margin-left: 2rem;
-                  margin-bottom: 5rem;
+                  // margin-left: 2rem;
+                  // margin-bottom: 5rem;
                 }
 
-                & > p{
-                  @include size(400px, 50px);
+                & > span:nth-child(2){
+                  @include size(100px, 50px);
                   text-align: center;
-                  // margin-top: 26px;
+                  margin-top: 7px;
+                }
+
+                & > span:nth-child(3){
+                  @include size(700px, 50px);
+                  text-align: center;
+                  margin-top: 7px;
+                  margin-left: 11px;
                 }
 
               }
 
               & >div:nth-child(3){
-                @include size(0,50px);
-                @include felx-setting(space-evenly);
+                @include size(1000px,50px);
+                @include felx-setting(flex-start,flex-start);
                 // margin-bottom: 15rem;
                 // margin-left: 2rem;
 
@@ -694,14 +841,375 @@ $color-1 : white;
                 @include size(40px,40px);
                   background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_youtube-icon.png') no-repeat; //유튜브 이미지
                   background-size: contain; 
-                  margin-left: 2rem;
-                  margin-bottom: 5rem;
+                  // margin-left: 2rem;
+                  // margin-bottom: 5rem;
                 }
 
-                & > p{
+                & > span:nth-child(2){
+                  @include size(120px, 50px);
+                  text-align: center;
+                  margin-top: 7px;
+                }
+
+                & > span:nth-child(3){
                   @include size(400px, 50px);
                   text-align: center;
-                  // margin-top: 26px;
+                  margin-top: 7px;
+                  padding-right: 12px;
+                }
+              }
+            }
+          }
+        }
+
+        // 교통 프로젝트 소개 페이지
+        & > li:nth-child(17){
+          @include felx-setting(center, center);
+
+          & > div{
+            @include size(1500px, 550px);
+            @include felx-setting(center, center, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+
+            & > p{
+              font-weight: bold;
+              font-size: 2rem;
+            }
+
+            & > div{
+              @include size(1450px, 450px);
+              @include felx-setting(center, center);
+
+              //초록 메모
+              & > div:nth-child(1) {
+                @include size(calc(1450px / 3), 440px);
+                background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_green.png') no-repeat center; //메모 초록색 이미지
+                background-size: contain;
+
+                & > p {
+                  font-size: 1.5rem;
+                  margin-top: 9rem;
+                  line-height: 2rem;
+                }
+              }
+              
+              //노란 메모
+              & > div:nth-child(2) {
+                @include size(calc(1450px / 3), 440px);
+                background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_yellow.png') no-repeat center; //메모 노란색 이미지
+                background-size: contain;
+
+                & > p {
+                  font-size: 1.1rem;
+                  margin-top: 7.5rem;
+                  margin-left: 6rem;
+                  line-height: 1.4rem;
+                  text-align: left;
+                }
+              }
+
+              //분홍 메모
+              & > div:nth-child(3) {
+                @include size(calc(1450px / 3), 440px);
+                background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_pink2.png') no-repeat center; //메모 분홍색 이미지
+                background-size: contain;
+
+                & > p {
+                  margin-top: 6rem;
+                  margin-left: 5.3rem;
+                  line-height: 2.2rem;
+                  text-align: left;
+                }
+              }
+            } 
+          }
+        }
+
+        // 교통 메인 페이지
+        & > li:nth-child(18){
+          @include felx-setting(center, center);
+
+          & > div{
+            @include size(1500px, 550px);
+            @include felx-setting(center, center, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+
+            & > div:nth-child(1){
+              @include size(1400px,370px);
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/trafficMain.png' ) no-repeat center; //교통 메인 페이지 이미지
+                background-size: contain;
+            }
+            
+            & > div:nth-child(2){
+              @include size(1400px,100px);
+              padding-top: 2rem;
+
+              & > p{
+                line-height: 2rem;
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+
+        // 교통 cctv&돌발정보 페이지
+        & > li:nth-child(19){
+          @include felx-setting(center, center);
+
+          & > div{
+            @include size(1500px, 550px);
+            @include felx-setting(center, center, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+
+            & > div:nth-child(1){
+              @include size(1400px,370px);
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/traffic-cctv.png' ) no-repeat center; //cctv 페이지 이미지
+                background-size: contain;
+            }
+            
+            & > div:nth-child(2){
+              @include size(1400px,120px);
+
+              & > p{
+                line-height: 3rem;
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+
+        // 교통 보호구역 & 주차장 페이지
+        & > li:nth-child(20){
+          @include felx-setting(center, center);
+
+          & > div{
+            @include size(1500px, 550px);
+            @include felx-setting(center, center, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+
+            & > div:nth-child(1){
+              @include size(1400px,370px);
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/traffic-school_zone.png' ) no-repeat center; //보호구역 & 주차장 페이지 이미지
+                background-size: contain;
+            }
+            
+            & > div:nth-child(2){
+              @include size(1400px,130px);
+
+              & > p{
+                line-height: 3rem;
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+
+        // 도로 위험 구역 페이지
+        & > li:nth-child(21){
+          @include felx-setting(center, center);
+
+          & > div{
+            @include size(1500px, 550px);
+            @include felx-setting(center, center, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+
+            & > div:nth-child(1){
+              @include size(1400px,370px);
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/traffic-hazard.png' ) no-repeat center; //교통 도로 위험 구역 페이지 이미지
+                background-size: contain;
+            }
+            
+            & > div:nth-child(2){
+              @include size(1400px,130px);
+
+              & > p{
+                line-height: 3rem;
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+
+        // 교통 길찾기 페이지
+        & > li:nth-child(22){
+          @include felx-setting(center, center);
+
+          & > div{
+            @include size(1500px, 550px);
+            @include felx-setting(center, center, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+
+            & > div:nth-child(1){
+              @include size(2500px,600px);
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/traffic-direction.png' ) no-repeat center; //길찾기 페이지 이미지
+                background-size: contain;
+            }
+            
+          }
+        }
+
+        // 교통 리뷰 페이지
+        & > li:nth-child(23){
+          @include felx-setting(center, center);
+
+          & > div{
+            @include size(1500px, 550px);
+            @include felx-setting(center, center, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+            background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/traffic-review.png') no-repeat center; //교통 리뷰 페이지 이미지
+            background-size: contain;
+          }
+        }
+
+        //교통 별첨 페이지
+        & > li:nth-child(24){
+          @include felx-setting(center, center);
+
+          & > div{
+            @include size(1500px, 550px);
+            @include felx-setting(space-around,flex-start, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+
+            & > div:nth-child(1){
+              @include size(1000px,90px);
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/traffic_appendix.png') no-repeat; //교통 별첨 이미지
+              background-size: contain;
+              margin-left: 2rem;
+              margin-top: 2rem;
+            }
+
+            & > div:nth-child(2){
+              @include felx-setting(space-evenly,flex-start,column);
+              @include size(1000px,400px);
+              margin-left: 3rem;
+
+              & >div:nth-child(1){
+                @include size(1000px,50px);
+                @include felx-setting(flex-start,flex-start);
+                // margin-bottom: 15rem;
+                // margin-left: 2rem;
+
+                & >div{
+                @include size(40px,40px);
+                  background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/octicon_mark-github-16.png') no-repeat; //깃허브 글씨 없는 이미지
+                  background-size: contain; 
+                  // margin-left: 2rem;
+                  // margin-bottom: 5rem;
+                }
+
+                & > span:nth-child(2){
+                  @include size(100px, 50px);
+                  text-align: center;
+                  margin-top: 7px;
+                }
+
+                & > span:nth-child(3){
+                  @include size(400px, 50px);
+                  text-align: center;
+                  margin-top: 7px;
+                }
+
+              }
+
+              & >div:nth-child(2){
+                @include size(1000px,50px);
+                @include felx-setting(flex-start,flex-start);
+                // margin-bottom: 15rem;
+                // margin-left: 2rem;
+
+                & >div{
+                @include size(40px,40px);
+                  background: url(' https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_google-drive.png') no-repeat; //구글 드라이브 이미지
+                  background-size: contain; 
+                  // margin-left: 2rem;
+                  // margin-bottom: 5rem;
+                }
+
+                & > span:nth-child(2){
+                  @include size(100px, 50px);
+                  text-align: center;
+                  margin-top: 7px;
+                }
+
+                & > span:nth-child(3){
+                  @include size(980px, 50px);
+                  text-align: center;
+                  margin-top: 7px;
+                  padding-left: 1.9rem;
+                }
+
+              }
+
+              & >div:nth-child(3){
+                @include size(1000px,50px);
+                @include felx-setting(flex-start,flex-start);
+                // margin-bottom: 15rem;
+                // margin-left: 2rem;
+
+                & >div{
+                @include size(40px,40px);
+                  background: url(' https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_google-drive.png') no-repeat; //구글 드라이브 이미지
+                  background-size: contain; 
+                  // margin-left: 2rem;
+                  // margin-bottom: 5rem;
+                }
+
+                & > span:nth-child(2){
+                  @include size(100px, 50px);
+                  text-align: center;
+                  margin-top: 7px;
+                }
+
+                & > span:nth-child(3){
+                  @include size(750px, 50px);
+                  text-align: center;
+                  margin-top: 7px;
+                  padding-right: 1.3rem;
+                }
+
+              }
+
+              & >div:nth-child(4){
+                @include size(1000px,50px);
+                @include felx-setting(flex-start,flex-start);
+                // margin-bottom: 15rem;
+                // margin-left: 2rem;
+
+                & >div{
+                @include size(40px,40px);
+                  background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_youtube-icon.png') no-repeat; //유튜브 이미지
+                  background-size: contain; 
+                  // margin-left: 2rem;
+                  // margin-bottom: 5rem;
+                }
+
+                & > span:nth-child(2){
+                  @include size(120px, 50px);
+                  text-align: center;
+                  margin-top: 7px;
+                }
+
+                & > span:nth-child(3){
+                  @include size(400px, 50px);
+                  text-align: center;
+                  margin-top: 7px;
+                  padding-right: 1.7rem;
                 }
               }
             }
@@ -709,7 +1217,7 @@ $color-1 : white;
         }
 
         // 복사한 첫번째 슬라이드. 슬라이드 다 완성되면 순서 번호만 바꿔주면 됨
-        & > li:nth-child(17) { 
+        & > li:nth-child(25) { 
           @include felx-setting(center, center);
           // background-color: red;
           & > div:nth-child(1) {

@@ -11,9 +11,28 @@ const liLen: any = li.length;
 const nextButton: HTMLElement | any = document.getElementById("nextButton");
 const prevButton: HTMLElement | any = document.getElementById("prevButton");
 const git = document.getElementById("git") as HTMLElement;
-console.log(git)
+// console.log(git)
 const jekyll = document.getElementById("jekyll") as HTMLElement;
+
 const movieGit = document.getElementById("movieGit") as HTMLAnchorElement;
+
+const stockGit = document.getElementById("stockGit") as HTMLElement;
+
+const stockPpt = document.getElementById("stockPpt") as HTMLElement;
+
+const stockDemo = document.getElementById("stockDemo") as HTMLElement;
+
+const trafficGit = document.getElementById("trafficGit") as HTMLElement;
+
+const trafficPpt = document.getElementById("trafficPpt") as HTMLElement;
+
+const trafficPresentation = document.getElementById("trafficPresentation") as HTMLElement;
+
+const trafficDemo = document.getElementById("trafficDemo") as HTMLElement;
+
+
+
+
 
 
 const liWidth = li[0].offsetWidth;
@@ -138,17 +157,40 @@ prevButton.addEventListener('click', ()=>{
 //   NslideCount();
 // });
 
+//페이지 이동 함수
+const pageMove = (page:HTMLElement, url:string)=>{
+  page.addEventListener('click', ()=>{
+    window.open(url)
+  });
+}
+
 //깃허브 페이지 이동
-git.addEventListener('click', ()=>{
-  // console.log('깃클릭')
-  window.open('https://github.com/MAGEUNWON', 'target=_blank','fullscreen')
-});
+pageMove(git,'https://github.com/MAGEUNWON')
 
 //jekyll 블로그 이동
-jekyll.addEventListener('click', ()=>{
-  window.open('https://mageunwon.github.io/')
-});
+pageMove(jekyll,'https://mageunwon.github.io/')
 
-movieGit.addEventListener('click', ()=>{
-  window.open('https://github.com/MAGEUNWON/movie-project')
-});
+//영화 프로젝트 깃허브 이동
+pageMove(movieGit,'https://github.com/MAGEUNWON/movie-project')
+
+//주식 프로젝트 깃허브 이동
+pageMove(stockGit,'https://github.com/WonDuJin/Dusick-Project-A')
+
+//주식 프로젝트 PPT 이동
+pageMove(stockPpt,'https://drive.google.com/file/d/1XRFjRxiOdG0LW7QMG9I-Y-Vbzv3OtGuh/view?usp=sharing')
+
+//주식 프로젝트 시연 영상 이동
+pageMove(stockDemo,'https://www.youtube.com/watch?v=jeWUFySNFoM')
+
+//교통 프로젝트 깃허브 이동
+pageMove(trafficGit,'https://github.com/MAGEUNWON/traffic-Project')
+
+//교통 프로젝트 PPT 이동
+pageMove(trafficPpt,'https://docs.google.com/presentation/d/1HRJOxEIJNef8tzwRYFIbhL-xt8zRhB3GP8h5B_5JSsY/edit?usp=sharing')
+
+//교통 프로젝트 발표 영상 이동
+pageMove(trafficPresentation,'https://drive.google.com/file/d/1xxnGEpSpGw4bmNPrwhVh0-4gEsGuTORb/view?usp=sharing')
+
+//교통 프로젝트 시연 영상 이동
+pageMove(trafficDemo,'https://www.youtube.com/watch?v=ibJ0NYnnHGc')
+

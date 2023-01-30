@@ -92,6 +92,130 @@
   border-radius: 5rem;
   margin-bottom: 2.4rem;
 }
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div > div:nth-child(1) {
+  width: 1000px;
+  height: 90px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/traffic_appendix.png") no-repeat;
+  background-size: contain;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div > div:nth-child(2) {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 1000px;
+  height: 400px;
+  margin-left: 3rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div > div:nth-child(2) > div:nth-child(1) {
+  width: 1000px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div > div:nth-child(2) > div:nth-child(1) > div {
+  width: 40px;
+  height: 40px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/octicon_mark-github-16.png") no-repeat;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div > div:nth-child(2) > div:nth-child(1) > span:nth-child(2) {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  margin-top: 7px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div > div:nth-child(2) > div:nth-child(1) > span:nth-child(3) {
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  margin-top: 7px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div > div:nth-child(2) > div:nth-child(2) {
+  width: 1000px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div > div:nth-child(2) > div:nth-child(2) > div {
+  width: 40px;
+  height: 40px;
+  background: url(" https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_google-drive.png") no-repeat;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  margin-top: 7px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div > div:nth-child(2) > div:nth-child(2) > span:nth-child(3) {
+  width: 700px;
+  height: 50px;
+  text-align: center;
+  margin-top: 7px;
+  margin-left: 11px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div > div:nth-child(2) > div:nth-child(3) {
+  width: 1000px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div > div:nth-child(2) > div:nth-child(3) > div {
+  width: 40px;
+  height: 40px;
+  background: url(" https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_google-drive.png") no-repeat;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div > div:nth-child(2) > div:nth-child(3) > span:nth-child(2) {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  margin-top: 7px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div > div:nth-child(2) > div:nth-child(3) > span:nth-child(3) {
+  width: 700px;
+  height: 50px;
+  text-align: center;
+  margin-top: 7px;
+  margin-left: 11px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div > div:nth-child(2) > div:nth-child(4) {
+  width: 1000px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div > div:nth-child(2) > div:nth-child(4) > div {
+  width: 40px;
+  height: 40px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_youtube-icon.png") no-repeat;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div > div:nth-child(2) > div:nth-child(4) > span:nth-child(2) {
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  margin-top: 7px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div > div:nth-child(2) > div:nth-child(4) > span:nth-child(3) {
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  margin-top: 7px;
+  padding-right: 12px;
+}
 #root > div:nth-child(2) > #slider > ul > li:nth-child(2) {
   display: flex;
   justify-content: center;
@@ -437,14 +561,20 @@
 #root > div:nth-child(2) > #slider > ul > li:nth-child(10) > div > div:nth-child(2) > div {
   width: 40px;
   height: 40px;
-  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/github+1.png") no-repeat center;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/octicon_mark-github-16.png") no-repeat;
   background-size: contain;
 }
-#root > div:nth-child(2) > #slider > ul > li:nth-child(10) > div > div:nth-child(2) > p {
+#root > div:nth-child(2) > #slider > ul > li:nth-child(10) > div > div:nth-child(2) > span:nth-child(2) {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  margin-top: 1rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(10) > div > div:nth-child(2) > span:nth-child(3) {
   width: 400px;
   height: 50px;
   text-align: center;
-  margin-top: 26px;
+  margin-top: 1rem;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(11) {
   display: flex;
@@ -531,7 +661,7 @@
 #root > div:nth-child(2) > #slider > ul > li:nth-child(12) > div > div:nth-child(1) {
   width: 1400px;
   height: 370px;
-  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/stockMain.png") no-repeat center;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/stock-main.png") no-repeat center;
   background-size: contain;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(12) > div > div:nth-child(2) {
@@ -643,23 +773,26 @@
 #root > div:nth-child(2) > #slider > ul > li:nth-child(16) > div > div:nth-child(1) {
   width: 1000px;
   height: 90px;
-  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/stock_appendix.png") no-repeat center;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/stock_appendix.png") no-repeat;
   background-size: contain;
   margin-left: 2rem;
-  margin-bottom: 5rem;
+  margin-top: 2rem;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(16) > div > div:nth-child(2) {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
   flex-direction: column;
+  width: 1000px;
+  height: 400px;
+  margin-left: 3rem;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(16) > div > div:nth-child(2) > div:nth-child(1) {
-  width: 500px;
+  width: 1000px;
   height: 50px;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: row;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(16) > div > div:nth-child(2) > div:nth-child(1) > div {
@@ -667,21 +800,25 @@
   height: 40px;
   background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/octicon_mark-github-16.png") no-repeat;
   background-size: contain;
-  margin-left: 2rem;
-  margin-bottom: 5rem;
 }
-#root > div:nth-child(2) > #slider > ul > li:nth-child(16) > div > div:nth-child(2) > div:nth-child(1) > p {
+#root > div:nth-child(2) > #slider > ul > li:nth-child(16) > div > div:nth-child(2) > div:nth-child(1) > span:nth-child(2) {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  margin-top: 7px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(16) > div > div:nth-child(2) > div:nth-child(1) > span:nth-child(3) {
   width: 400px;
   height: 50px;
   text-align: center;
-  margin-top: 26px;
+  margin-top: 7px;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(16) > div > div:nth-child(2) > div:nth-child(2) {
-  width: 500px;
+  width: 1000px;
   height: 50px;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: row;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(16) > div > div:nth-child(2) > div:nth-child(2) > div {
@@ -689,21 +826,26 @@
   height: 40px;
   background: url(" https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_google-drive.png") no-repeat;
   background-size: contain;
-  margin-left: 2rem;
-  margin-bottom: 5rem;
 }
-#root > div:nth-child(2) > #slider > ul > li:nth-child(16) > div > div:nth-child(2) > div:nth-child(2) > p {
-  width: 400px;
+#root > div:nth-child(2) > #slider > ul > li:nth-child(16) > div > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
+  width: 100px;
   height: 50px;
   text-align: center;
-  margin-top: 26px;
+  margin-top: 7px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(16) > div > div:nth-child(2) > div:nth-child(2) > span:nth-child(3) {
+  width: 700px;
+  height: 50px;
+  text-align: center;
+  margin-top: 7px;
+  margin-left: 11px;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(16) > div > div:nth-child(2) > div:nth-child(3) {
-  width: 500px;
+  width: 1000px;
   height: 50px;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: row;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(16) > div > div:nth-child(2) > div:nth-child(3) > div {
@@ -711,14 +853,19 @@
   height: 40px;
   background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_youtube-icon.png") no-repeat;
   background-size: contain;
-  margin-left: 2rem;
-  margin-bottom: 5rem;
 }
-#root > div:nth-child(2) > #slider > ul > li:nth-child(16) > div > div:nth-child(2) > div:nth-child(3) > p {
+#root > div:nth-child(2) > #slider > ul > li:nth-child(16) > div > div:nth-child(2) > div:nth-child(3) > span:nth-child(2) {
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  margin-top: 7px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(16) > div > div:nth-child(2) > div:nth-child(3) > span:nth-child(3) {
   width: 400px;
   height: 50px;
   text-align: center;
-  margin-top: 26px;
+  margin-top: 7px;
+  padding-right: 12px;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(17) {
   display: flex;
@@ -726,14 +873,387 @@
   align-items: center;
   flex-direction: row;
 }
-#root > div:nth-child(2) > #slider > ul > li:nth-child(17) > div:nth-child(1) {
+#root > div:nth-child(2) > #slider > ul > li:nth-child(17) > div {
+  width: 1500px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 5rem;
+  margin-bottom: 2.4rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(17) > div > p {
+  font-weight: bold;
+  font-size: 2rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(17) > div > div {
+  width: 1450px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(17) > div > div > div:nth-child(1) {
+  width: 483.3333333333px;
+  height: 440px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_green.png") no-repeat center;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(17) > div > div > div:nth-child(1) > p {
+  font-size: 1.5rem;
+  margin-top: 9rem;
+  line-height: 2rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(17) > div > div > div:nth-child(2) {
+  width: 483.3333333333px;
+  height: 440px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_yellow.png") no-repeat center;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(17) > div > div > div:nth-child(2) > p {
+  font-size: 1.1rem;
+  margin-top: 7.5rem;
+  margin-left: 6rem;
+  line-height: 1.4rem;
+  text-align: left;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(17) > div > div > div:nth-child(3) {
+  width: 483.3333333333px;
+  height: 440px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_pink2.png") no-repeat center;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(17) > div > div > div:nth-child(3) > p {
+  margin-top: 6rem;
+  margin-left: 5.3rem;
+  line-height: 2.2rem;
+  text-align: left;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(18) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(18) > div {
+  width: 1500px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 5rem;
+  margin-bottom: 2.4rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(18) > div > div:nth-child(1) {
+  width: 1400px;
+  height: 370px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/trafficMain.png") no-repeat center;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(18) > div > div:nth-child(2) {
+  width: 1400px;
+  height: 100px;
+  padding-top: 2rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(18) > div > div:nth-child(2) > p {
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(19) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(19) > div {
+  width: 1500px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 5rem;
+  margin-bottom: 2.4rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(19) > div > div:nth-child(1) {
+  width: 1400px;
+  height: 370px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/traffic-cctv.png") no-repeat center;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(19) > div > div:nth-child(2) {
+  width: 1400px;
+  height: 120px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(19) > div > div:nth-child(2) > p {
+  line-height: 3rem;
+  font-size: 1.5rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(20) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(20) > div {
+  width: 1500px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 5rem;
+  margin-bottom: 2.4rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(20) > div > div:nth-child(1) {
+  width: 1400px;
+  height: 370px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/traffic-school_zone.png") no-repeat center;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(20) > div > div:nth-child(2) {
+  width: 1400px;
+  height: 130px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(20) > div > div:nth-child(2) > p {
+  line-height: 3rem;
+  font-size: 1.5rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(21) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(21) > div {
+  width: 1500px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 5rem;
+  margin-bottom: 2.4rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(21) > div > div:nth-child(1) {
+  width: 1400px;
+  height: 370px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/traffic-hazard.png") no-repeat center;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(21) > div > div:nth-child(2) {
+  width: 1400px;
+  height: 130px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(21) > div > div:nth-child(2) > p {
+  line-height: 3rem;
+  font-size: 1.5rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(22) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(22) > div {
+  width: 1500px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 5rem;
+  margin-bottom: 2.4rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(22) > div > div:nth-child(1) {
+  width: 2500px;
+  height: 600px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/traffic-direction.png") no-repeat center;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(23) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(23) > div {
+  width: 1500px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 5rem;
+  margin-bottom: 2.4rem;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/traffic-review.png") no-repeat center;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(24) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div {
+  width: 1500px;
+  height: 550px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 5rem;
+  margin-bottom: 2.4rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(1) {
+  width: 1000px;
+  height: 90px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/traffic_appendix.png") no-repeat;
+  background-size: contain;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 1000px;
+  height: 400px;
+  margin-left: 3rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) > div:nth-child(1) {
+  width: 1000px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) > div:nth-child(1) > div {
+  width: 40px;
+  height: 40px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/octicon_mark-github-16.png") no-repeat;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) > div:nth-child(1) > span:nth-child(2) {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  margin-top: 7px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) > div:nth-child(1) > span:nth-child(3) {
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  margin-top: 7px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) > div:nth-child(2) {
+  width: 1000px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) > div:nth-child(2) > div {
+  width: 40px;
+  height: 40px;
+  background: url(" https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_google-drive.png") no-repeat;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  margin-top: 7px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) > div:nth-child(2) > span:nth-child(3) {
+  width: 980px;
+  height: 50px;
+  text-align: center;
+  margin-top: 7px;
+  padding-left: 1.9rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) > div:nth-child(3) {
+  width: 1000px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) > div:nth-child(3) > div {
+  width: 40px;
+  height: 40px;
+  background: url(" https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_google-drive.png") no-repeat;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) > div:nth-child(3) > span:nth-child(2) {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  margin-top: 7px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) > div:nth-child(3) > span:nth-child(3) {
+  width: 750px;
+  height: 50px;
+  text-align: center;
+  margin-top: 7px;
+  padding-right: 1.3rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) > div:nth-child(4) {
+  width: 1000px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) > div:nth-child(4) > div {
+  width: 40px;
+  height: 40px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_youtube-icon.png") no-repeat;
+  background-size: contain;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) > div:nth-child(4) > span:nth-child(2) {
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  margin-top: 7px;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) > div:nth-child(4) > span:nth-child(3) {
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  margin-top: 7px;
+  padding-right: 1.7rem;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(25) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#root > div:nth-child(2) > #slider > ul > li:nth-child(25) > div:nth-child(1) {
   width: 350px;
   height: 500px;
   border: 2px solid white;
   border-radius: 20%;
   margin-right: 3rem;
 }
-#root > div:nth-child(2) > #slider > ul > li:nth-child(17) > div:nth-child(2) {
+#root > div:nth-child(2) > #slider > ul > li:nth-child(25) > div:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -745,7 +1265,7 @@
   margin-left: 3rem;
   margin-bottom: 3rem;
 }
-#root > div:nth-child(2) > #slider > ul > li:nth-child(17) > div:nth-child(2) > p {
+#root > div:nth-child(2) > #slider > ul > li:nth-child(25) > div:nth-child(2) > p {
   width: 600px;
   height: 50px;
 }

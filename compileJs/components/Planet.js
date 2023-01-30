@@ -11,9 +11,16 @@ var liLen = li.length;
 var nextButton = document.getElementById("nextButton");
 var prevButton = document.getElementById("prevButton");
 var git = document.getElementById("git");
-console.log(git);
+// console.log(git)
 var jekyll = document.getElementById("jekyll");
 var movieGit = document.getElementById("movieGit");
+var stockGit = document.getElementById("stockGit");
+var stockPpt = document.getElementById("stockPpt");
+var stockDemo = document.getElementById("stockDemo");
+var trafficGit = document.getElementById("trafficGit");
+var trafficPpt = document.getElementById("trafficPpt");
+var trafficPresentation = document.getElementById("trafficPresentation");
+var trafficDemo = document.getElementById("trafficDemo");
 var liWidth = li[0].offsetWidth;
 // console.log(liWidth);
 // const liWidth = 1920;
@@ -119,16 +126,30 @@ prevButton.addEventListener('click', function () {
 // nextButton.addEventListener("click", () => {
 //   NslideCount();
 // });
+//페이지 이동 함수
+var pageMove = function (page, url) {
+    page.addEventListener('click', function () {
+        window.open(url);
+    });
+};
 //깃허브 페이지 이동
-git.addEventListener('click', function () {
-    // console.log('깃클릭')
-    window.open('https://github.com/MAGEUNWON', 'target=_blank', 'fullscreen');
-});
+pageMove(git, 'https://github.com/MAGEUNWON');
 //jekyll 블로그 이동
-jekyll.addEventListener('click', function () {
-    window.open('https://mageunwon.github.io/');
-});
-movieGit.addEventListener('click', function () {
-    window.open('https://github.com/MAGEUNWON/movie-project');
-});
+pageMove(jekyll, 'https://mageunwon.github.io/');
+//영화 프로젝트 깃허브 이동
+pageMove(movieGit, 'https://github.com/MAGEUNWON/movie-project');
+//주식 프로젝트 깃허브 이동
+pageMove(stockGit, 'https://github.com/WonDuJin/Dusick-Project-A');
+//주식 프로젝트 PPT 이동
+pageMove(stockPpt, 'https://drive.google.com/file/d/1XRFjRxiOdG0LW7QMG9I-Y-Vbzv3OtGuh/view?usp=sharing');
+//주식 프로젝트 시연 영상 이동
+pageMove(stockDemo, 'https://www.youtube.com/watch?v=jeWUFySNFoM');
+//교통 프로젝트 깃허브 이동
+pageMove(trafficGit, 'https://github.com/MAGEUNWON/traffic-Project');
+//교통 프로젝트 PPT 이동
+pageMove(trafficPpt, 'https://docs.google.com/presentation/d/1HRJOxEIJNef8tzwRYFIbhL-xt8zRhB3GP8h5B_5JSsY/edit?usp=sharing');
+//교통 프로젝트 발표 영상 이동
+pageMove(trafficPresentation, 'https://drive.google.com/file/d/1xxnGEpSpGw4bmNPrwhVh0-4gEsGuTORb/view?usp=sharing');
+//교통 프로젝트 시연 영상 이동
+pageMove(trafficDemo, 'https://www.youtube.com/watch?v=ibJ0NYnnHGc');
 //# sourceMappingURL=Planet.js.map
