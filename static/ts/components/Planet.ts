@@ -13,6 +13,7 @@ const prevButton: HTMLElement | any = document.getElementById("prevButton");
 const git = document.getElementById("git") as HTMLElement;
 console.log(git)
 const jekyll = document.getElementById("jekyll") as HTMLElement;
+const movieGit = document.getElementById("movieGit") as HTMLAnchorElement;
 
 
 const liWidth = li[0].offsetWidth;
@@ -139,11 +140,15 @@ prevButton.addEventListener('click', ()=>{
 
 //깃허브 페이지 이동
 git.addEventListener('click', ()=>{
-  console.log('깃클릭')
+  // console.log('깃클릭')
   window.open('https://github.com/MAGEUNWON', 'target=_blank','fullscreen')
 });
 
 //jekyll 블로그 이동
 jekyll.addEventListener('click', ()=>{
   window.open('https://mageunwon.github.io/')
+});
+
+movieGit.addEventListener('click', ()=>{
+  window.open('https://github.com/MAGEUNWON/movie-project')
 });

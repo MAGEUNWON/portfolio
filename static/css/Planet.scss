@@ -103,17 +103,18 @@ $color-1 : white;
         }
 
         //마지막 슬라이드. 복사해서 첫 번째 슬라이드 앞으로 옴, 슬라이드 다 완성하면 완성된 마지막 슬라이로 다시 순서 맞춰 주면 됨.
-        & > li:nth-child(1) { 
-          @include felx-setting(center, center);
+        & > li:nth-child(1){
+          @include felx-setting(center,center);
 
           & > div{
             @include size(1500px, 550px);
-            @include felx-setting(center, center, column);
+            @include felx-setting(space-around,flex-start, column);
             border: 2px solid white;
             border-radius: 5rem;
             margin-bottom: 2.4rem;
           }
         }
+
 
         //이게 프로젝트에서 첫번째 슬라이드 부분(소개 화면)
         & > li:nth-child(2) { 
@@ -291,13 +292,13 @@ $color-1 : white;
             border-radius: 5rem;
             margin-bottom: 2.4rem;
 
-            & div:nth-child(1){
+            & > div:nth-child(1){
               @include size(1400px,370px);
               background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/randomPage.png' ) no-repeat center; //랜덤 페이지 이미지
                 background-size: contain;
             }
             
-            & div:nth-child(2){
+            & > div:nth-child(2){
               @include size(1400px,140px);
 
               & > p{
@@ -395,15 +396,320 @@ $color-1 : white;
 
         //영화 리뷰 페이지
         & > li:nth-child(9){
-          @include size(1500px, 550px);
-          @include felx-setting(center, center, column);
-          border: 2px solid white;
-          border-radius: 5rem;
-          margin-bottom: 2.4rem;
+          @include felx-setting(center, center);
+
+          & > div{
+            @include size(1500px, 550px);
+            @include felx-setting(center,center);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+            background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/movei_review.png') no-repeat center;
+            background-size: contain;
+          }
+        }
+
+        //영화 별첨 페이지
+        & > li:nth-child(10){
+          @include felx-setting(center,center);
+
+          & > div{
+            @include size(1500px, 550px);
+            @include felx-setting(space-around,flex-start, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+
+            & > div:nth-child(1){
+              @include size(1000px,90px);
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/appendix.png') no-repeat;
+              background-size: contain;
+              margin-left: 2rem;
+              margin-bottom: 5rem;
+            }
+
+            & > div:nth-child(2){
+              @include size(500px,50px);
+              @include felx-setting(space-evenly,center);
+              margin-bottom: 15rem;
+              margin-left: 2rem;
+
+
+              //깃 이미지 넣기
+              & >div {
+                @include size(40px,40px);
+                background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/github+1.png")
+                no-repeat center;
+                background-size: contain;
+              }
+
+              & > p {
+                @include size(400px, 50px);
+                text-align: center;
+                margin-top: 26px;
+              }
+
+            }
+          }
+        }
+
+        //주식 프로젝트 소개 페이지
+        & > li:nth-child(11){
+          @include felx-setting(center,center);
+
+          & > div{
+            @include size(1500px, 550px);
+            @include felx-setting(center, center, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+
+            & > p{
+              font-weight: bold;
+              font-size: 2rem;
+            }
+
+            & > div{
+              @include size(1450px, 450px);
+              @include felx-setting(center, center);
+
+              //초록 메모
+              & > div:nth-child(1) {
+                @include size(calc(1450px / 3), 440px);
+                background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_green.png') no-repeat center; //메모 초록색 이미지
+                background-size: contain;
+
+                & > p {
+                  font-size: 1.5rem;
+                  margin-top: 9rem;
+                  line-height: 2rem;
+                }
+              }
+              
+              //노란 메모
+              & > div:nth-child(2) {
+                @include size(calc(1450px / 3), 440px);
+                background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_yellow.png') no-repeat center; //메모 노란색 이미지
+                background-size: contain;
+
+                & > p {
+                  font-size: 1.1rem;
+                  margin-top: 8rem;
+                  margin-left: 6rem;
+                  line-height: 1.4rem;
+                  text-align: left;
+                }
+              }
+
+              //분홍 메모
+              & > div:nth-child(3) {
+                @include size(calc(1450px / 3), 440px);
+                background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_pink2.png') no-repeat center; //메모 분홍색 이미지
+                background-size: contain;
+
+                & > p {
+                  margin-top: 7rem;
+                  margin-left: 5.3rem;
+                  line-height: 2.2rem;
+                  text-align: left;
+                }
+              }
+            } 
+          }
+        }
+        
+        //주식 main 페이지
+        & > li:nth-child(12){
+          @include felx-setting(center,center);
+
+          & > div{
+            @include size(1500px, 550px);
+            @include felx-setting(space-around, center, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+
+            & > div:nth-child(1){
+              @include size(1400px,370px);
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/stockMain.png' ) no-repeat center; //주식 메인 페이지 이미지
+                background-size: contain;
+            }
+            
+            & > div:nth-child(2){
+              @include size(1400px,150px);
+
+              & > p{
+                line-height: 2rem;
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+
+        //주식 거래량, 증감률 페이지
+        & > li:nth-child(13){
+          @include felx-setting(center,center);
+
+          & > div{
+            @include size(1500px, 550px);
+            @include felx-setting(space-around,center,column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+
+            & > div:nth-child(1){
+              @include size(1400px,370px);
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/tradingVolume.png' ) no-repeat center; //주식 거래량 이미지
+                background-size: contain;
+            }
+            
+            & > div:nth-child(2){
+              @include size(1400px,150px);
+
+              & > p{
+                line-height: 2rem;
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+
+        //주식 검색 페이지
+        & > li:nth-child(14){
+          @include felx-setting(center,center);
+
+          & > div{
+            @include size(1500px, 550px);
+            @include felx-setting(space-around,center, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+
+            & > div:nth-child(1){
+              @include size(1400px,370px);
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/searchPage.png' ) no-repeat center; //주식 검색 페이지 이미지
+                background-size: contain;
+            }
+            
+            & > div:nth-child(2){
+              @include size(1400px,130px);
+
+              & > p{
+                line-height: 2rem;
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+
+        //주식 리뷰 페이지
+        & > li:nth-child(15){
+          @include felx-setting(center,center);
+
+          & > div{
+            @include size(1500px, 550px);
+            @include felx-setting(space-around,flex-start, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+            background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/stock_review.png') no-repeat center; //주식 리뷰 페이지 이미지
+            background-size: contain;
+          }
+        }
+
+        //주식 별첨 페이지
+        & > li:nth-child(16){
+          @include felx-setting(center,center);
+
+          & > div{
+            @include size(1500px, 550px);
+            @include felx-setting(space-around,flex-start, column);
+            border: 2px solid white;
+            border-radius: 5rem;
+            margin-bottom: 2.4rem;
+
+            & > div:nth-child(1){
+              @include size(1000px,90px);
+              background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/stock_appendix.png') no-repeat center; //주식 별첨 이미지
+              background-size: contain;
+              // margin-left: 2rem;
+              // margin-bottom: 5rem;
+            }
+
+            & > div:nth-child(2){
+              @include flex-setting(center,flex-start,column);
+              @include size(1000px,400px);
+
+              & >div:nth-child(1){
+                @include size(0,50px);
+                @include felx-setting(space-evenly);
+                // margin-bottom: 15rem;
+                // margin-left: 2rem;
+
+                & >div{
+                @include size(40px,40px);
+                  background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/octicon_mark-github-16.png') no-repeat; //깃허브 글씨 없는 이미지
+                  background-size: contain; 
+                  margin-left: 2rem;
+                  margin-bottom: 5rem;
+                }
+
+                & > p{
+                  @include size(400px, 50px);
+                  text-align: center;
+                  // margin-top: 26px;  
+                }
+
+              }
+
+              & >div:nth-child(2){
+                @include size(0,50px);
+                @include felx-setting(space-evenly);
+                // margin-bottom: 15rem;
+                // margin-left: 2rem;
+
+                & >div{
+                @include size(40px,40px);
+                  background: url(' https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_google-drive.png') no-repeat; //구글 드라이브 이미지
+                  background-size: contain; 
+                  margin-left: 2rem;
+                  margin-bottom: 5rem;
+                }
+
+                & > p{
+                  @include size(400px, 50px);
+                  text-align: center;
+                  // margin-top: 26px;
+                }
+
+              }
+
+              & >div:nth-child(3){
+                @include size(0,50px);
+                @include felx-setting(space-evenly);
+                // margin-bottom: 15rem;
+                // margin-left: 2rem;
+
+                & >div{
+                @include size(40px,40px);
+                  background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/logos_youtube-icon.png') no-repeat; //유튜브 이미지
+                  background-size: contain; 
+                  margin-left: 2rem;
+                  margin-bottom: 5rem;
+                }
+
+                & > p{
+                  @include size(400px, 50px);
+                  text-align: center;
+                  // margin-top: 26px;
+                }
+              }
+            }
+          }
         }
 
         // 복사한 첫번째 슬라이드. 슬라이드 다 완성되면 순서 번호만 바꿔주면 됨
-        & > li:nth-child(10) { 
+        & > li:nth-child(17) { 
           @include felx-setting(center, center);
           // background-color: red;
           & > div:nth-child(1) {

@@ -13,6 +13,7 @@ var prevButton = document.getElementById("prevButton");
 var git = document.getElementById("git");
 console.log(git);
 var jekyll = document.getElementById("jekyll");
+var movieGit = document.getElementById("movieGit");
 var liWidth = li[0].offsetWidth;
 // console.log(liWidth);
 // const liWidth = 1920;
@@ -120,11 +121,14 @@ prevButton.addEventListener('click', function () {
 // });
 //깃허브 페이지 이동
 git.addEventListener('click', function () {
-    console.log('깃클릭');
+    // console.log('깃클릭')
     window.open('https://github.com/MAGEUNWON', 'target=_blank', 'fullscreen');
 });
 //jekyll 블로그 이동
 jekyll.addEventListener('click', function () {
     window.open('https://mageunwon.github.io/');
+});
+movieGit.addEventListener('click', function () {
+    window.open('https://github.com/MAGEUNWON/movie-project');
 });
 //# sourceMappingURL=Planet.js.map
