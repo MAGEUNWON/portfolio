@@ -61,24 +61,30 @@ $color-1 : white;
       & > button {
         position: absolute;
         top: 40%;
-
         z-index: 999;
         display: block;
         padding: 4% 3%;
-        @include size(auto, auto);
-        background-color: goldenrod;
-        color: black;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 18px;
-        opacity: 0.8;
+        border :none;
+        
+        // background-color: goldenrod;
+        // color: black;
+        // text-decoration: none;
+        // font-weight: 600;
+        // font-size: 18px;
+        // opacity: 0.8;
         cursor: pointer;
       }
 
       & > button:nth-child(1) {
+        @include size(150px, 150px);
+        background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/nextButton.png') no-repeat center;
+        background-size: contain;
         right: 1%;
       }
       & > button:nth-child(2) {
+        @include size(150px, 150px);
+        background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/preButton.png') no-repeat center;
+        background-size: contain;
         left: 0.1%;
       }
 
@@ -112,6 +118,8 @@ $color-1 : white;
             border: 2px solid white;
             border-radius: 5rem;
             margin-bottom: 2.4rem;
+            cursor: pointer;
+
 
             & > div:nth-child(1){
               @include size(1000px,90px);
@@ -282,6 +290,8 @@ $color-1 : white;
               @include size(550px,80px);
               @include felx-setting(space-around,center);
               margin-top: 5rem;
+              cursor: pointer;
+
 
               //깃허브 이미지 넣기
               & >div {
@@ -304,6 +314,8 @@ $color-1 : white;
               @include size(550px,80px);
               @include felx-setting(space-around,center);
               margin-bottom: 5rem;
+              cursor: pointer;
+
 
 
               //지킬 이미지 넣기
@@ -560,6 +572,8 @@ $color-1 : white;
               @include felx-setting(space-evenly,center);
               margin-bottom: 15rem;
               margin-left: 2rem;
+              cursor: pointer;
+
 
 
               //깃 이미지 넣기
@@ -777,6 +791,7 @@ $color-1 : white;
               & >div:nth-child(1){
                 @include size(1000px,50px);
                 @include felx-setting(flex-start,flex-start);
+                cursor: pointer;
                 // margin-bottom: 15rem;
                 // margin-left: 2rem;
 
@@ -805,6 +820,7 @@ $color-1 : white;
               & >div:nth-child(2){
                 @include size(1000px,50px);
                 @include felx-setting(flex-start,flex-start);
+                cursor: pointer;
                 // margin-bottom: 15rem;
                 // margin-left: 2rem;
 
@@ -834,6 +850,7 @@ $color-1 : white;
               & >div:nth-child(3){
                 @include size(1000px,50px);
                 @include felx-setting(flex-start,flex-start);
+                cursor: pointer;
                 // margin-bottom: 15rem;
                 // margin-left: 2rem;
 
@@ -1102,6 +1119,7 @@ $color-1 : white;
               & >div:nth-child(1){
                 @include size(1000px,50px);
                 @include felx-setting(flex-start,flex-start);
+                cursor: pointer;
                 // margin-bottom: 15rem;
                 // margin-left: 2rem;
 
@@ -1130,6 +1148,7 @@ $color-1 : white;
               & >div:nth-child(2){
                 @include size(1000px,50px);
                 @include felx-setting(flex-start,flex-start);
+                cursor: pointer;
                 // margin-bottom: 15rem;
                 // margin-left: 2rem;
 
@@ -1159,6 +1178,7 @@ $color-1 : white;
               & >div:nth-child(3){
                 @include size(1000px,50px);
                 @include felx-setting(flex-start,flex-start);
+                cursor: pointer;
                 // margin-bottom: 15rem;
                 // margin-left: 2rem;
 
@@ -1188,6 +1208,7 @@ $color-1 : white;
               & >div:nth-child(4){
                 @include size(1000px,50px);
                 @include felx-setting(flex-start,flex-start);
+                cursor: pointer;
                 // margin-bottom: 15rem;
                 // margin-left: 2rem;
 

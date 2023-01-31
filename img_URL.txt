@@ -61,3 +61,7 @@ cctv & 돌발 정보 페이지 이미지 : https://pserverimg.s3.ap-northeast-2.
 교통 리뷰 페이지 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/traffic-review.png
 
 교통 별첨 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/traffic_appendix.png
+
+이전 버튼 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/preButton.png
+
+다음 버튼 이미지  : https://pserverimg.s3.ap-northeast-2.amazonaws.com/nextButton.png

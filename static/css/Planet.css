@@ -41,20 +41,21 @@
   z-index: 999;
   display: block;
   padding: 4% 3%;
-  width: auto;
-  height: auto;
-  background-color: goldenrod;
-  color: black;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 18px;
-  opacity: 0.8;
+  border: none;
   cursor: pointer;
 }
 #root > div:nth-child(2) > #slider > button:nth-child(1) {
+  width: 150px;
+  height: 150px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/nextButton.png") no-repeat center;
+  background-size: contain;
   right: 1%;
 }
 #root > div:nth-child(2) > #slider > button:nth-child(2) {
+  width: 150px;
+  height: 150px;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/preButton.png") no-repeat center;
+  background-size: contain;
   left: 0.1%;
 }
 #root > div:nth-child(2) > #slider > ul {
@@ -91,6 +92,7 @@
   border: 2px solid white;
   border-radius: 5rem;
   margin-bottom: 2.4rem;
+  cursor: pointer;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(1) > div > div:nth-child(1) {
   width: 1000px;
@@ -258,6 +260,7 @@
   align-items: center;
   flex-direction: row;
   margin-top: 5rem;
+  cursor: pointer;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div {
   width: 40px;
@@ -279,6 +282,7 @@
   align-items: center;
   flex-direction: row;
   margin-bottom: 5rem;
+  cursor: pointer;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div {
   width: 60px;
@@ -557,6 +561,7 @@
   flex-direction: row;
   margin-bottom: 15rem;
   margin-left: 2rem;
+  cursor: pointer;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(10) > div > div:nth-child(2) > div {
   width: 40px;
@@ -794,6 +799,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
+  cursor: pointer;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(16) > div > div:nth-child(2) > div:nth-child(1) > div {
   width: 40px;
@@ -820,6 +826,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
+  cursor: pointer;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(16) > div > div:nth-child(2) > div:nth-child(2) > div {
   width: 40px;
@@ -847,6 +854,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
+  cursor: pointer;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(16) > div > div:nth-child(2) > div:nth-child(3) > div {
   width: 40px;
@@ -1140,6 +1148,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
+  cursor: pointer;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) > div:nth-child(1) > div {
   width: 40px;
@@ -1166,6 +1175,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
+  cursor: pointer;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) > div:nth-child(2) > div {
   width: 40px;
@@ -1193,6 +1203,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
+  cursor: pointer;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) > div:nth-child(3) > div {
   width: 40px;
@@ -1220,6 +1231,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
+  cursor: pointer;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(24) > div > div:nth-child(2) > div:nth-child(4) > div {
   width: 40px;
