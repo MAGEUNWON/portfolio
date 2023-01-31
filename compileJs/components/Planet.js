@@ -21,8 +21,19 @@ var trafficGit = document.getElementById("trafficGit");
 var trafficPpt = document.getElementById("trafficPpt");
 var trafficPresentation = document.getElementById("trafficPresentation");
 var trafficDemo = document.getElementById("trafficDemo");
+var movie = document.getElementById("movie");
+console.dir(movie);
+var stock = document.getElementById("stock");
+console.dir(stock);
+var traffic = document.getElementById("traffic");
+console.dir(traffic);
+var movieLi = document.getElementById("movieLi");
+console.dir(movieLi); //5760
+console.log(movieLi.offsetLeft);
+var stockLi = document.getElementById("stockLi"); //19200
+var trafficLi = document.getElementById("trafficLi"); //30720
 var liWidth = li[0].offsetWidth;
-// console.log(liWidth);
+// console.log(li[3].offsetWidth);
 // const liWidth = 1920;
 // console.log(li.length);
 // console.dir(li.length - 1);
@@ -49,7 +60,7 @@ ul.style.transform = "translate3d(-" + (liWidth * (startNum + 1)) + "px, 0px, 0p
 var current = startNum; //현재 슬라이드 인덱스(복사한 것 제외)
 // console.log(current);
 var currentSlide = ul.children[current]; //현재 슬라이드 dom
-// // console.log(currentSlide);
+// console.log(currentSlide);
 currentSlide.classList.add('slide_active');
 // console.log(currentSlide);
 // const NslideCount = () => {
@@ -152,4 +163,10 @@ pageMove(trafficPpt, 'https://docs.google.com/presentation/d/1HRJOxEIJNef8tzwRYF
 pageMove(trafficPresentation, 'https://drive.google.com/file/d/1xxnGEpSpGw4bmNPrwhVh0-4gEsGuTORb/view?usp=sharing');
 //교통 프로젝트 시연 영상 이동
 pageMove(trafficDemo, 'https://www.youtube.com/watch?v=ibJ0NYnnHGc');
+var movieLo = movieLi.offsetWidth;
+movie.addEventListener('click', function () {
+    console.log('클릭');
+    ul.style.transform = "translateX(-5760px)";
+    console.log(ul.style.transform = "translateX(-" + (liWidth * (current + 3)) + "px)");
+});
 //# sourceMappingURL=Planet.js.map

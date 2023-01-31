@@ -30,13 +30,26 @@ const trafficPresentation = document.getElementById("trafficPresentation") as HT
 
 const trafficDemo = document.getElementById("trafficDemo") as HTMLElement;
 
+const movie = document.getElementById("movie") as HTMLElement;
+console.dir(movie); 
 
+const stock = document.getElementById("stock") as HTMLElement;
+console.dir(stock); 
 
+const traffic = document.getElementById("traffic") as HTMLElement;
+console.dir(traffic); 
 
+const movieLi = document.getElementById("movieLi") as HTMLElement;
+console.dir(movieLi) //5760
+console.log(movieLi.offsetLeft)
+
+const stockLi = document.getElementById("stockLi") as HTMLElement; //19200
+
+const trafficLi = document.getElementById("trafficLi") as HTMLElement; //30720
 
 
 const liWidth = li[0].offsetWidth;
-// console.log(liWidth);
+// console.log(li[3].offsetWidth);
 // const liWidth = 1920;
 // console.log(li.length);
 // console.dir(li.length - 1);
@@ -70,7 +83,7 @@ ul.style.transform = "translate3d(-" + (liWidth*(startNum + 1)) + "px, 0px, 0px)
 let current = startNum; //현재 슬라이드 인덱스(복사한 것 제외)
 // console.log(current);
 let currentSlide = ul.children[current]; //현재 슬라이드 dom
-// // console.log(currentSlide);
+// console.log(currentSlide);
 currentSlide.classList.add('slide_active');
 // console.log(currentSlide);
 
@@ -194,3 +207,10 @@ pageMove(trafficPresentation,'https://drive.google.com/file/d/1xxnGEpSpGw4bmNPrw
 //교통 프로젝트 시연 영상 이동
 pageMove(trafficDemo,'https://www.youtube.com/watch?v=ibJ0NYnnHGc')
 
+
+// let movieLo:number = movieLi.offsetWidth; 
+
+movie.addEventListener('click', ()=>{
+  console.log('클릭')
+  ul.style.transform = "translateX(-5760px)";
+});

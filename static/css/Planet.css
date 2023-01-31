@@ -7,11 +7,11 @@
 }
 
 #root {
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
 }
 #root > div:nth-child(1) {
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
   background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/PlanetBg.png") no-repeat center;
   background-size: cover;
@@ -21,13 +21,13 @@
   pointer-events: none;
 }
 #root > div:nth-child(2) {
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
   background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/HillBg.jpg") no-repeat center;
   background-size: cover;
 }
 #root > div:nth-child(2) > #slider {
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
   display: flex;
   position: relative;
@@ -57,6 +57,16 @@
   background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/preButton.png") no-repeat center;
   background-size: contain;
   left: 0.1%;
+}
+#root > div:nth-child(2) > #slider > div:nth-child(3) {
+  width: 600px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  z-index: 999;
 }
 #root > div:nth-child(2) > #slider > ul {
   position: relative;

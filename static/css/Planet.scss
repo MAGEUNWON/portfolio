@@ -27,11 +27,12 @@
 
 $color-1 : white;
 
+
 #root {
-  @include size(100vw, 100vh);
+  @include size(99vw, 100vh);  
 
   & > div:nth-child(1) {
-    @include size(100vw, 100vh);
+    @include size(99vw, 100vh);
     // @include felx-setting(center, center);
     background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/PlanetBg.png') no-repeat center; //우주선 이미지
     background-size: cover;
@@ -45,12 +46,14 @@ $color-1 : white;
     pointer-events: none;
   }
   & > div:nth-child(2) {
-    @include size(100vw, 100vh);
+    @include size(99vw, 100vh);
     background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/HillBg.jpg') no-repeat center; //언덕 배경 이미지
     background-size: cover;
 
+
+
     & > #slider {
-      @include size(100vw, 100vh);
+      @include size(99vw, 100vh);
       // @include felx-setting(center, center);
       display: flex;
       position: relative;
@@ -86,6 +89,17 @@ $color-1 : white;
         background: url('https://pserverimg.s3.ap-northeast-2.amazonaws.com/preButton.png') no-repeat center;
         background-size: contain;
         left: 0.1%;
+      }
+
+      & > div:nth-child(3){
+        @include size(600px,50px);
+        @include felx-setting(space-around,center);
+        position: absolute;
+        z-index: 999;
+      
+        // & > a:nth-child(1){
+      
+        // }
       }
 
       & > ul {
