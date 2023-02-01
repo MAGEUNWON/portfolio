@@ -91,16 +91,16 @@ $color-1 : white;
         left: 0.1%;
       }
 
-      & > div:nth-child(3){
-        @include size(600px,50px);
-        @include felx-setting(space-around,center);
-        position: absolute;
-        z-index: 999;
+      // & > div:nth-child(3){
+      //   @include size(600px,50px);
+      //   @include felx-setting(space-around,center);
+      //   position: absolute;
+      //   z-index: 999;
       
-        // & > a:nth-child(1){
+      //   // & > a:nth-child(1){
       
-        // }
-      }
+      //   // }
+      // }
 
       & > ul {
         // @include size(auto, 90vh);
