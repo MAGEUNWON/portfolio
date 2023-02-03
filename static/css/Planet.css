@@ -58,16 +58,6 @@
   background-size: contain;
   left: 0.1%;
 }
-#root > div:nth-child(2) > #slider > div:nth-child(3) {
-  width: 600px;
-  height: 50px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  position: absolute;
-  z-index: 999;
-}
 #root > div:nth-child(2) > #slider > ul {
   position: relative;
   align-items: center;
@@ -240,6 +230,8 @@
   border: 2px solid white;
   border-radius: 20%;
   margin-right: 3rem;
+  background: url("https://pserverimg.s3.ap-northeast-2.amazonaws.com/me.png") no-repeat center;
+  background-size: cover;
 }
 #root > div:nth-child(2) > #slider > ul > li:nth-child(2) > div:nth-child(2) {
   display: flex;

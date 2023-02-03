@@ -6,6 +6,8 @@
 
 언덕 배경 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/HillBg.jpg
 
+프로필 사진 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/me.png
+
 메모 초록색 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_green.png
 
 메모 노란색 이미지 : https://pserverimg.s3.ap-northeast-2.amazonaws.com/memo_yellow.png
