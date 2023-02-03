@@ -163,10 +163,9 @@ pageMove(trafficPpt, 'https://docs.google.com/presentation/d/1HRJOxEIJNef8tzwRYF
 pageMove(trafficPresentation, 'https://drive.google.com/file/d/1xxnGEpSpGw4bmNPrwhVh0-4gEsGuTORb/view?usp=sharing');
 //교통 프로젝트 시연 영상 이동
 pageMove(trafficDemo, 'https://www.youtube.com/watch?v=ibJ0NYnnHGc');
-var movieLo = movieLi.offsetWidth;
+// let movieLo:number = movieLi.offsetWidth; 
 movie.addEventListener('click', function () {
     console.log('클릭');
     ul.style.transform = "translateX(-5760px)";
-    console.log(ul.style.transform = "translateX(-" + (liWidth * (current + 3)) + "px)");
 });
 //# sourceMappingURL=Planet.js.map
